@@ -4,7 +4,7 @@
 
 This repository is a compact public-release candidate for a multi-agent crystal-structure discovery workflow coupled to MatterGen and an evaluator feedback loop.
 
-> 当前文件夹是从完整实验工作区抽取的公开发布包。发布前仍需补充作者、许可证与引用信息；详见 [发布前检查清单](docs/PRE_RELEASE_CHECKLIST.md)。
+> 当前文件夹是从完整实验工作区抽取的公开发布包。项目代码采用 Apache License 2.0；作者与引用信息仍待补充，详见 [发布前检查清单](docs/PRE_RELEASE_CHECKLIST.md)。
 
 ## 主要结果
 
@@ -83,4 +83,6 @@ PYTHONPATH=src pytest -q
 
 ## 许可证与引用
 
-当前尚未代替项目所有者选择许可证，也没有作者信息，因此该目录暂不含正式 `LICENSE` 或 `CITATION.cff`。公开推送前请完成 [发布前检查清单](docs/PRE_RELEASE_CHECKLIST.md)，并将 `CITATION.cff.template` 填写后重命名为 `CITATION.cff`。
+本项目自有代码采用 [Apache License 2.0](LICENSE)。外部依赖、MatterGen、checkpoint、evaluator 数据及其他第三方材料仍分别受其原许可证和使用条款约束。
+
+正式引用信息尚待作者补充；请填写 `CITATION.cff.template` 后重命名为 `CITATION.cff`。其余待确认事项见 [发布前检查清单](docs/PRE_RELEASE_CHECKLIST.md)。

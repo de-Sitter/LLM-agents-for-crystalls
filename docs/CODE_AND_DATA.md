@@ -16,6 +16,7 @@
 | `artifacts/dynamic_cumulative_report.json` | 452+548 合并来源索引 |
 | `artifacts/final_submission_strategy.provenance.json` | 内部最终策略的只读 provenance 快照 |
 | `SOURCE_MANIFEST.json` | 每个抽取文件的来源和 SHA-256 |
+| `LICENSE` | 项目自有代码采用的 Apache License 2.0 全文 |
 
 ## 未包含
 
@@ -46,3 +47,7 @@
 - 不复制内部 Slurm launcher 和 evaluator 日志。
 
 抽取逻辑保存在原工作区 `scripts/build_github_release_package.py`，便于后续从 `final_version/` 重建本目录。
+
+## 许可边界
+
+根目录 `LICENSE` 适用于本项目自有代码。外部依赖、MatterGen、checkpoint、evaluator 数据及其他第三方材料不因包含或引用于本仓库而重新授权，使用时须分别遵守其原许可证和服务条款。

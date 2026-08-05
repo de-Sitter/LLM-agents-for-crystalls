@@ -1,11 +1,11 @@
 # GitHub 发布前检查清单
 
-以下项目中，前四项应在公开推送前由项目所有者完成。
+以下项目中，许可证已经由项目所有者确定；其余权利与元数据事项仍需继续确认。
 
 ## 必须确认
 
 - [ ] 填写仓库名称、作者、机构、联系方式和项目主页。
-- [ ] 选择并添加正式 `LICENSE`。当前没有许可证；不应由工具代替权利人决定。
+- [x] 已选择并添加 Apache License 2.0（`LICENSE`）。
 - [ ] 填写 `CITATION.cff.template`，重命名为 `CITATION.cff`。
 - [ ] 确认课程 PDF、evaluator 代码/数据、训练参考集和 MatterGen 权重的再分发权；当前均未打包。
 - [ ] 明确 README 中所有数值是 in-sample evaluator 结果，不能写成 out-of-sample、DFT 或实验验证。
@@ -30,26 +30,18 @@ python scripts/verify_release.py --write-checksums
 python scripts/verify_release.py
 ```
 
-## 初始化并推送
+## 后续提交并推送
 
-本文件夹尚未初始化 Git，也没有外部仓库地址。确认以上事项后再执行：
+仓库已经发布到 `git@github.com:de-Sitter/LLM-agents-for-crystalls.git`。后续更新在审阅改动后执行：
 
 ```bash
-cd github_release
-git init
-git branch -M main
 git add .
 git status
-git commit -m "Initial public release"
-git remote add origin git@github.com:OWNER/REPOSITORY.git
-git push -u origin main
+git commit -m "Describe the update"
+git push
 ```
 
-如果使用 GitHub CLI，也可在审阅 `git status` 后执行：
-
-```bash
-gh repo create OWNER/REPOSITORY --public --source=. --remote=origin --push
-```
+首次在新的本地副本工作时，应先从 GitHub 克隆仓库，不要再次执行 `git init`。
 
 ## 建议的 GitHub 仓库设置
 

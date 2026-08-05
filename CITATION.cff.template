@@ -7,6 +7,5 @@ date-released: "TODO"
 authors:
   - family-names: "TODO"
     given-names: "TODO"
-repository-code: "https://github.com/TODO/TODO"
-license: "TODO"
-
+repository-code: "https://github.com/de-Sitter/LLM-agents-for-crystalls"
+license: "Apache-2.0"
