@@ -1,0 +1,2309 @@
+{
+  "strategy_name": "final_submission_agent_guided_20260629",
+  "compiled_from": "A-F principle discovery plus X/Y/Z/W MatterGen sequential runs; frozen for reproducible generate.sh submission.",
+  "notes": [
+    "Prioritize structures already evaluated with e_hull < 0.10; strict e_hull < 0 records naturally sort first.",
+    "Allow multiple structures per reduced formula because A-F/XYZW discovered stable polymorph families; final selection still removes exact structure duplicates.",
+    "Random fallback is biased toward successful alkali/soft-halide/cage mechanisms and compact oxide/sulfide/nitride principles from A-F."
+  ],
+  "elite_replay": {
+    "enabled": true,
+    "e_hull_max": 0.1,
+    "max_count": 1400,
+    "max_per_formula": 100,
+    "sources": [
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T022905Z_attempt001/iter_001",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T022905Z_attempt001/iter_001/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T022905Z_attempt001/iter_001/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.19177824562449874,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T032013Z_attempt001/iter_002",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T032013Z_attempt001/iter_002/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T032013Z_attempt001/iter_002/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.16807567421166958,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T032013Z_attempt001/iter_001",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T032013Z_attempt001/iter_001/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T032013Z_attempt001/iter_001/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.1587861667067454,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T020438Z_attempt001/iter_001",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T020438Z_attempt001/iter_001/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T020438Z_attempt001/iter_001/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.1469527910442423,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T014813Z_attempt001/iter_001",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T014813Z_attempt001/iter_001/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T014813Z_attempt001/iter_001/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.1385944992146797,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T032013Z_attempt001/iter_003",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T032013Z_attempt001/iter_003/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T032013Z_attempt001/iter_003/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.13184127391048062,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T032013Z_attempt001/iter_005",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T032013Z_attempt001/iter_005/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T032013Z_attempt001/iter_005/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.12078809299484528,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T053452Z_attempt001/iter_001",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T053452Z_attempt001/iter_001/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T053452Z_attempt001/iter_001/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.11916825087646465,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T012510Z_attempt001/iter_001",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T012510Z_attempt001/iter_001/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T012510Z_attempt001/iter_001/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.11594482381164539,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "physics_mvp_runs/current/round_083",
+        "input": "physics_mvp_runs/current/round_083/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_083/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.11379176658203072,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 3
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T022905Z_attempt001/iter_003",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T022905Z_attempt001/iter_003/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T022905Z_attempt001/iter_003/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.10966517826085642,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T022905Z_attempt001/iter_002",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T022905Z_attempt001/iter_002/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T022905Z_attempt001/iter_002/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.06738026240261163,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_009",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_009/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_009/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.051369493411864475,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_005",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_005/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_005/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.04852761060424804,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T020438Z_attempt001/iter_002",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T020438Z_attempt001/iter_002/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T020438Z_attempt001/iter_002/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.04587352608024142,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T043519Z_attempt001/iter_002",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T043519Z_attempt001/iter_002/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T043519Z_attempt001/iter_002/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.0390318437751489,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_015",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_015/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_015/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.03531940720322169,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_012",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_012/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_012/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.03280908340227651,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_005",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_005/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_005/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.02736429453905087,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "physics_mvp_runs/current/round_138",
+        "input": "physics_mvp_runs/current/round_138/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_138/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.025410560862426657,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 3
+      },
+      {
+        "round": "physics_mvp_runs/current/round_208",
+        "input": "physics_mvp_runs/current/round_208/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_208/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.025410322443847555,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 4
+      },
+      {
+        "round": "physics_mvp_runs/current/round_139",
+        "input": "physics_mvp_runs/current/round_139/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_139/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.025410322443847555,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 3
+      },
+      {
+        "round": "physics_mvp_runs/current/round_189",
+        "input": "physics_mvp_runs/current/round_189/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_189/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.022290170860026493,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 2
+      },
+      {
+        "round": "physics_mvp_runs/current/round_153",
+        "input": "physics_mvp_runs/current/round_153/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_153/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.021470516817057472,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 2
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_019",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_019/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_019/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.02106400472004699,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_002",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_002/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_002/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.017988105543344624,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T042450Z_attempt001/iter_001",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T042450Z_attempt001/iter_001/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T042450Z_attempt001/iter_001/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.01792306961181378,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "physics_mvp_runs/current/round_046",
+        "input": "physics_mvp_runs/current/round_046/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_046/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 6
+      },
+      {
+        "round": "physics_mvp_runs/current/round_147",
+        "input": "physics_mvp_runs/current/round_147/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_147/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 6
+      },
+      {
+        "round": "physics_mvp_runs/current/round_044",
+        "input": "physics_mvp_runs/current/round_044/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_044/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 5
+      },
+      {
+        "round": "physics_mvp_runs/current/round_055",
+        "input": "physics_mvp_runs/current/round_055/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_055/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 5
+      },
+      {
+        "round": "physics_mvp_runs/current/round_106",
+        "input": "physics_mvp_runs/current/round_106/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_106/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 5
+      },
+      {
+        "round": "physics_mvp_runs/current/round_107",
+        "input": "physics_mvp_runs/current/round_107/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_107/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 5
+      },
+      {
+        "round": "physics_mvp_runs/current/round_135",
+        "input": "physics_mvp_runs/current/round_135/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_135/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 5
+      },
+      {
+        "round": "physics_mvp_runs/current/round_136",
+        "input": "physics_mvp_runs/current/round_136/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_136/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 5
+      },
+      {
+        "round": "physics_mvp_runs/current/round_156",
+        "input": "physics_mvp_runs/current/round_156/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_156/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 5
+      },
+      {
+        "round": "physics_mvp_runs/current/round_196",
+        "input": "physics_mvp_runs/current/round_196/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_196/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 5
+      },
+      {
+        "round": "physics_mvp_runs/current/round_198",
+        "input": "physics_mvp_runs/current/round_198/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_198/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 5
+      },
+      {
+        "round": "physics_mvp_runs/current/round_202",
+        "input": "physics_mvp_runs/current/round_202/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_202/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 5
+      },
+      {
+        "round": "physics_mvp_runs/current/round_217",
+        "input": "physics_mvp_runs/current/round_217/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_217/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 5
+      },
+      {
+        "round": "physics_mvp_runs/current/round_038",
+        "input": "physics_mvp_runs/current/round_038/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_038/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 4
+      },
+      {
+        "round": "physics_mvp_runs/current/round_117",
+        "input": "physics_mvp_runs/current/round_117/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_117/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 4
+      },
+      {
+        "round": "physics_mvp_runs/current/round_134",
+        "input": "physics_mvp_runs/current/round_134/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_134/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 4
+      },
+      {
+        "round": "physics_mvp_runs/current/round_215",
+        "input": "physics_mvp_runs/current/round_215/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_215/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 4
+      },
+      {
+        "round": "physics_mvp_runs/current/round_420",
+        "input": "physics_mvp_runs/current/round_420/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_420/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 4
+      },
+      {
+        "round": "physics_mvp_runs/current/round_422",
+        "input": "physics_mvp_runs/current/round_422/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_422/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 4
+      },
+      {
+        "round": "physics_mvp_runs/current/round_066",
+        "input": "physics_mvp_runs/current/round_066/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_066/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 3
+      },
+      {
+        "round": "physics_mvp_runs/current/round_087",
+        "input": "physics_mvp_runs/current/round_087/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_087/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 3
+      },
+      {
+        "round": "physics_mvp_runs/current/round_421",
+        "input": "physics_mvp_runs/current/round_421/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_421/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 3
+      },
+      {
+        "round": "physics_mvp_runs/current/round_041",
+        "input": "physics_mvp_runs/current/round_041/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_041/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 2
+      },
+      {
+        "round": "physics_mvp_runs/current/round_112",
+        "input": "physics_mvp_runs/current/round_112/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_112/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 2
+      },
+      {
+        "round": "physics_mvp_runs/current/round_067",
+        "input": "physics_mvp_runs/current/round_067/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_067/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.016422631350589967,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "physics_mvp_runs/current/round_157",
+        "input": "physics_mvp_runs/current/round_157/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_157/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.012774696228231797,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 3
+      },
+      {
+        "round": "physics_mvp_runs/current/round_313",
+        "input": "physics_mvp_runs/current/round_313/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_313/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.011735867185058702,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 8
+      },
+      {
+        "round": "physics_mvp_runs/current/round_317",
+        "input": "physics_mvp_runs/current/round_317/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_317/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.011735867185058702,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 7
+      },
+      {
+        "round": "physics_mvp_runs/current/round_324",
+        "input": "physics_mvp_runs/current/round_324/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_324/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.011735867185058702,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 6
+      },
+      {
+        "round": "physics_mvp_runs/current/round_314",
+        "input": "physics_mvp_runs/current/round_314/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_314/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.0117356287664796,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 8
+      },
+      {
+        "round": "physics_mvp_runs/current/round_307",
+        "input": "physics_mvp_runs/current/round_307/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_307/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.0117356287664796,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 7
+      },
+      {
+        "round": "physics_mvp_runs/current/round_424",
+        "input": "physics_mvp_runs/current/round_424/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_424/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.0117356287664796,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 4
+      },
+      {
+        "round": "physics_mvp_runs/current/round_326",
+        "input": "physics_mvp_runs/current/round_326/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_326/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.011304771301105632,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 7
+      },
+      {
+        "round": "physics_mvp_runs/current/round_312",
+        "input": "physics_mvp_runs/current/round_312/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_312/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.011304771301105632,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 6
+      },
+      {
+        "round": "physics_mvp_runs/current/round_315",
+        "input": "physics_mvp_runs/current/round_315/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_315/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.011304771301105632,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 6
+      },
+      {
+        "round": "physics_mvp_runs/current/round_316",
+        "input": "physics_mvp_runs/current/round_316/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_316/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.011304771301105632,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 6
+      },
+      {
+        "round": "physics_mvp_runs/current/round_327",
+        "input": "physics_mvp_runs/current/round_327/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_327/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.011304771301105632,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 6
+      },
+      {
+        "round": "physics_mvp_runs/current/round_399",
+        "input": "physics_mvp_runs/current/round_399/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_399/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.011304771301105632,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 4
+      },
+      {
+        "round": "physics_mvp_runs/current/round_405",
+        "input": "physics_mvp_runs/current/round_405/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_405/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.011304771301105632,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 2
+      },
+      {
+        "round": "physics_mvp_runs/current/round_403",
+        "input": "physics_mvp_runs/current/round_403/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_403/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.011304771301105632,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "physics_mvp_runs/current/round_218",
+        "input": "physics_mvp_runs/current/round_218/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_218/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.010325347778156413,
+        "lt_0_10_count": 6,
+        "strict_lt_0_count": 2
+      },
+      {
+        "round": "physics_mvp_runs/current/round_402",
+        "input": "physics_mvp_runs/current/round_402/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_402/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.010207092162922038,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "physics_mvp_runs/current/round_311",
+        "input": "physics_mvp_runs/current/round_311/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_311/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.010206615325763835,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 6
+      },
+      {
+        "round": "physics_mvp_runs/current/round_401",
+        "input": "physics_mvp_runs/current/round_401/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_401/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.010206376907184733,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "physics_mvp_runs/current/round_188",
+        "input": "physics_mvp_runs/current/round_188/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_188/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.010022079167209874,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 4
+      },
+      {
+        "round": "physics_mvp_runs/current/round_120",
+        "input": "physics_mvp_runs/current/round_120/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_120/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.00942771698852507,
+        "lt_0_10_count": 6,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "physics_mvp_runs/current/round_380",
+        "input": "physics_mvp_runs/current/round_380/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_380/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.009427240151366867,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 4
+      },
+      {
+        "round": "physics_mvp_runs/current/round_381",
+        "input": "physics_mvp_runs/current/round_381/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_381/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.009427240151366867,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 4
+      },
+      {
+        "round": "physics_mvp_runs/current/round_383",
+        "input": "physics_mvp_runs/current/round_383/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_383/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.009427240151366867,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 4
+      },
+      {
+        "round": "physics_mvp_runs/current/round_385",
+        "input": "physics_mvp_runs/current/round_385/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_385/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.009427240151366867,
+        "lt_0_10_count": 8,
+        "strict_lt_0_count": 2
+      },
+      {
+        "round": "physics_mvp_runs/current/round_127",
+        "input": "physics_mvp_runs/current/round_127/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_127/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.009153147614135548,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 5
+      },
+      {
+        "round": "physics_mvp_runs/current/round_205",
+        "input": "physics_mvp_runs/current/round_205/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_205/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.009153147614135548,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 5
+      },
+      {
+        "round": "physics_mvp_runs/current/round_116",
+        "input": "physics_mvp_runs/current/round_116/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_116/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.009152909195556447,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 6
+      },
+      {
+        "round": "physics_mvp_runs/current/round_054",
+        "input": "physics_mvp_runs/current/round_054/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_054/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.009152909195556447,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 5
+      },
+      {
+        "round": "physics_mvp_runs/current/round_203",
+        "input": "physics_mvp_runs/current/round_203/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_203/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.009152670776977345,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 5
+      },
+      {
+        "round": "physics_mvp_runs/current/round_069",
+        "input": "physics_mvp_runs/current/round_069/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_069/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.009152670776977345,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 3
+      },
+      {
+        "round": "physics_mvp_runs/current/round_204",
+        "input": "physics_mvp_runs/current/round_204/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_204/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.009152432358398244,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 6
+      },
+      {
+        "round": "physics_mvp_runs/current/round_045",
+        "input": "physics_mvp_runs/current/round_045/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_045/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.009030289161865213,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 5
+      },
+      {
+        "round": "physics_mvp_runs/current/round_111",
+        "input": "physics_mvp_runs/current/round_111/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_111/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.009030289161865213,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 5
+      },
+      {
+        "round": "physics_mvp_runs/current/round_126",
+        "input": "physics_mvp_runs/current/round_126/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_126/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.009030289161865213,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 5
+      },
+      {
+        "round": "physics_mvp_runs/current/round_214",
+        "input": "physics_mvp_runs/current/round_214/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_214/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.009030289161865213,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 5
+      },
+      {
+        "round": "physics_mvp_runs/current/round_039",
+        "input": "physics_mvp_runs/current/round_039/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_039/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.009030289161865213,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 4
+      },
+      {
+        "round": "physics_mvp_runs/current/round_114",
+        "input": "physics_mvp_runs/current/round_114/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_114/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.008847902415765496,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 4
+      },
+      {
+        "round": "physics_mvp_runs/current/round_207",
+        "input": "physics_mvp_runs/current/round_207/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_207/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.008847902415765496,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 4
+      },
+      {
+        "round": "physics_mvp_runs/current/round_137",
+        "input": "physics_mvp_runs/current/round_137/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_137/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.008847902415765496,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 3
+      },
+      {
+        "round": "physics_mvp_runs/current/round_150",
+        "input": "physics_mvp_runs/current/round_150/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_150/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.006666597870200519,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "physics_mvp_runs/current/round_151",
+        "input": "physics_mvp_runs/current/round_151/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_151/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.006666597870200519,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "physics_mvp_runs/current/round_152",
+        "input": "physics_mvp_runs/current/round_152/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_152/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.006666597870200519,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "physics_mvp_runs/current/round_155",
+        "input": "physics_mvp_runs/current/round_155/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_155/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.006666597870200519,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "physics_mvp_runs/current/round_192",
+        "input": "physics_mvp_runs/current/round_192/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_192/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.006622932681101812,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "physics_mvp_runs/current/round_193",
+        "input": "physics_mvp_runs/current/round_193/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_193/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.006622932681101812,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "physics_mvp_runs/current/round_195",
+        "input": "physics_mvp_runs/current/round_195/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_195/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.006622932681101812,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "physics_mvp_runs/current/round_190",
+        "input": "physics_mvp_runs/current/round_190/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_190/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.00662269426252271,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260629T003843Z_attempt001/iter_001",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260629T003843Z_attempt001/iter_001/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260629T003843Z_attempt001/iter_001/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.006578319650754505,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "physics_mvp_runs/current/round_416",
+        "input": "physics_mvp_runs/current/round_416/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_416/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.006133032043234898,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 4
+      },
+      {
+        "round": "physics_mvp_runs/current/round_417",
+        "input": "physics_mvp_runs/current/round_417/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_417/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.006133032043234898,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 4
+      },
+      {
+        "round": "physics_mvp_runs/current/round_423",
+        "input": "physics_mvp_runs/current/round_423/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_423/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.006133032043234898,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 4
+      },
+      {
+        "round": "physics_mvp_runs/current/round_414",
+        "input": "physics_mvp_runs/current/round_414/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_414/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.006133032043234898,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 3
+      },
+      {
+        "round": "physics_mvp_runs/current/round_413",
+        "input": "physics_mvp_runs/current/round_413/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_413/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.006133032043234898,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 2
+      },
+      {
+        "round": "physics_mvp_runs/current/round_115",
+        "input": "physics_mvp_runs/current/round_115/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_115/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.004325886643066212,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 3
+      },
+      {
+        "round": "physics_mvp_runs/current/round_043",
+        "input": "physics_mvp_runs/current/round_043/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_043/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.004325886643066212,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 2
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_010",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_010/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_010/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.003704745767191042,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "physics_mvp_runs/current/round_129",
+        "input": "physics_mvp_runs/current/round_129/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_129/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.002869353945777142,
+        "lt_0_10_count": 6,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "physics_mvp_runs/current/round_210",
+        "input": "physics_mvp_runs/current/round_210/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_210/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.0008389339242698135,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 2
+      },
+      {
+        "round": "physics_mvp_runs/current/round_211",
+        "input": "physics_mvp_runs/current/round_211/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_211/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.0008389339242698135,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 2
+      },
+      {
+        "round": "physics_mvp_runs/current/round_213",
+        "input": "physics_mvp_runs/current/round_213/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_213/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.0008389339242698135,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 2
+      },
+      {
+        "round": "physics_mvp_runs/current/round_065",
+        "input": "physics_mvp_runs/current/round_065/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_065/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.0007152995541996887,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 2
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260629T003843Z_attempt001/iter_002",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260629T003843Z_attempt001/iter_002/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260629T003843Z_attempt001/iter_002/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.0005998138668306119,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "physics_mvp_runs/current/round_042",
+        "input": "physics_mvp_runs/current/round_042/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_042/analysis/e_hull_ranked.csv",
+        "best_e_hull": -0.00031084856323193577,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_010",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_010/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_010/analysis/e_hull_ranked.csv",
+        "best_e_hull": -6.35027001942845e-05,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 1
+      },
+      {
+        "round": "physics_mvp_runs/current/round_406",
+        "input": "physics_mvp_runs/current/round_406/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_406/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.00012615145165995045,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_411",
+        "input": "physics_mvp_runs/current/round_411/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_411/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.00012615145165995045,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_014",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_014/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_014/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.0006441628294417967,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_015",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_015/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_015/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.001441504436262342,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_004",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_004/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_004/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.001966358728840767,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_410",
+        "input": "physics_mvp_runs/current/round_410/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_410/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.002097118950197263,
+        "lt_0_10_count": 8,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_013",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_013/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_013/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.002444419130041453,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_003",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_003/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_003/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.002729332342122248,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_061",
+        "input": "physics_mvp_runs/current/round_061/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_061/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.002895707095743827,
+        "lt_0_10_count": 8,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_070",
+        "input": "physics_mvp_runs/current/round_070/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_070/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.002895707095743827,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_064",
+        "input": "physics_mvp_runs/current/round_064/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_064/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.0030189303694663217,
+        "lt_0_10_count": 7,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_071",
+        "input": "physics_mvp_runs/current/round_071/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_071/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.0030189303694663217,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_072",
+        "input": "physics_mvp_runs/current/round_072/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_072/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.0030189303694663217,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_073",
+        "input": "physics_mvp_runs/current/round_073/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_073/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.0030189303694663217,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_074",
+        "input": "physics_mvp_runs/current/round_074/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_074/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.0030189303694663217,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_075",
+        "input": "physics_mvp_runs/current/round_075/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_075/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.0030189303694663217,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_370",
+        "input": "physics_mvp_runs/current/round_370/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_370/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.0030189303694663217,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_376",
+        "input": "physics_mvp_runs/current/round_376/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_376/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.0030189303694663217,
+        "lt_0_10_count": 7,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_017",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_017/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_017/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.003037511561715611,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_158",
+        "input": "physics_mvp_runs/current/round_158/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_158/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.0031781804771595645,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_079",
+        "input": "physics_mvp_runs/current/round_079/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_079/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.004284694605916517,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T022905Z_attempt001/iter_004",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T022905Z_attempt001/iter_004/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T022905Z_attempt001/iter_004/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.005202148197970935,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_009",
+        "input": "physics_mvp_runs/current/round_009/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_009/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.005276818508303194,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_390",
+        "input": "physics_mvp_runs/current/round_390/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_390/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.005519051267089736,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_012",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_012/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_012/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.005588658209873643,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_023",
+        "input": "physics_mvp_runs/current/round_023/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_023/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.005932359850899793,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_350",
+        "input": "physics_mvp_runs/current/round_350/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_350/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.006047463730464386,
+        "lt_0_10_count": 6,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_009",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_009/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_009/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.006847532130784373,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_019",
+        "input": "physics_mvp_runs/current/round_019/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_019/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.006896924463433152,
+        "lt_0_10_count": 7,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_021",
+        "input": "physics_mvp_runs/current/round_021/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_021/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.007073471999968106,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_085",
+        "input": "physics_mvp_runs/current/round_085/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_085/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.007145930916748533,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_342",
+        "input": "physics_mvp_runs/current/round_342/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_342/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.007455611997464473,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_027",
+        "input": "physics_mvp_runs/current/round_027/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_027/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.007575966027829395,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_014",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_014/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_014/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.007857052043053425,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_024",
+        "input": "physics_mvp_runs/current/round_024/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_024/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.00821450249005995,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_025",
+        "input": "physics_mvp_runs/current/round_025/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_025/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.00821450249005995,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_030",
+        "input": "physics_mvp_runs/current/round_030/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_030/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.008599369468994311,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_031",
+        "input": "physics_mvp_runs/current/round_031/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_031/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.008599369468994311,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_036",
+        "input": "physics_mvp_runs/current/round_036/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_036/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.008599369468994311,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_037",
+        "input": "physics_mvp_runs/current/round_037/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_037/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.008599369468994311,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_084",
+        "input": "physics_mvp_runs/current/round_084/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_084/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.008599369468994311,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_086",
+        "input": "physics_mvp_runs/current/round_086/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_086/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.008599369468994311,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_109",
+        "input": "physics_mvp_runs/current/round_109/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_109/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.008599369468994311,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_119",
+        "input": "physics_mvp_runs/current/round_119/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_119/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.008599369468994311,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_122",
+        "input": "physics_mvp_runs/current/round_122/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_122/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.008599369468994311,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_199",
+        "input": "physics_mvp_runs/current/round_199/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_199/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.008599369468994311,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_008",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_008/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_008/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.009258501502413363,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_132",
+        "input": "physics_mvp_runs/current/round_132/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_132/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.01000772781915149,
+        "lt_0_10_count": 8,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_128",
+        "input": "physics_mvp_runs/current/round_128/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_128/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.010008204656309694,
+        "lt_0_10_count": 8,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_133",
+        "input": "physics_mvp_runs/current/round_133/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_133/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.010008204656309694,
+        "lt_0_10_count": 8,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_400",
+        "input": "physics_mvp_runs/current/round_400/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_400/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.010255766065267125,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_018",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_018/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_018/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.010521976823843815,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_349",
+        "input": "physics_mvp_runs/current/round_349/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_349/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.01079759282959003,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_100",
+        "input": "physics_mvp_runs/current/round_100/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_100/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.013589471118526042,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_101",
+        "input": "physics_mvp_runs/current/round_101/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_101/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.013589471118526042,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_102",
+        "input": "physics_mvp_runs/current/round_102/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_102/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.013589471118526042,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_104",
+        "input": "physics_mvp_runs/current/round_104/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_104/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.013589471118526042,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_103",
+        "input": "physics_mvp_runs/current/round_103/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_103/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.013589947955684245,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_105",
+        "input": "physics_mvp_runs/current/round_105/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_105/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.013590424792842448,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_378",
+        "input": "physics_mvp_runs/current/round_378/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_378/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.013647090290662689,
+        "lt_0_10_count": 8,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_356",
+        "input": "physics_mvp_runs/current/round_356/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_356/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.013892690705322064,
+        "lt_0_10_count": 6,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_351",
+        "input": "physics_mvp_runs/current/round_351/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_351/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.013893167542480267,
+        "lt_0_10_count": 4,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_354",
+        "input": "physics_mvp_runs/current/round_354/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_354/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.014071981476806439,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_426",
+        "input": "physics_mvp_runs/current/round_426/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_426/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.014175216721557415,
+        "lt_0_10_count": 6,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_016",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_016/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_016/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.014397817180175743,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_007",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_007/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_007/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.01444368560180731,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_028",
+        "input": "physics_mvp_runs/current/round_028/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_028/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.014807517552762661,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_007",
+        "input": "physics_mvp_runs/current/round_007/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_007/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.016018792148443595,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_142",
+        "input": "physics_mvp_runs/current/round_142/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_142/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.018260371513183493,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_146",
+        "input": "physics_mvp_runs/current/round_146/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_146/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.018260848350341696,
+        "lt_0_10_count": 7,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_140",
+        "input": "physics_mvp_runs/current/round_140/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_140/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.0182613251874999,
+        "lt_0_10_count": 6,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_141",
+        "input": "physics_mvp_runs/current/round_141/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_141/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.0182613251874999,
+        "lt_0_10_count": 8,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_029",
+        "input": "physics_mvp_runs/current/round_029/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_029/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.01921380253373428,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_018",
+        "input": "physics_mvp_runs/current/round_018/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_018/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.019570340376641404,
+        "lt_0_10_count": 8,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_099",
+        "input": "physics_mvp_runs/current/round_099/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_099/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.019570340376641404,
+        "lt_0_10_count": 3,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_323",
+        "input": "physics_mvp_runs/current/round_323/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_323/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.020316071042480566,
+        "lt_0_10_count": 8,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_052",
+        "input": "physics_mvp_runs/current/round_052/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_052/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.020317978391113378,
+        "lt_0_10_count": 4,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_051",
+        "input": "physics_mvp_runs/current/round_051/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_051/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.02031845522827158,
+        "lt_0_10_count": 2,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_320",
+        "input": "physics_mvp_runs/current/round_320/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_320/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.02031845522827158,
+        "lt_0_10_count": 2,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_321",
+        "input": "physics_mvp_runs/current/round_321/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_321/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.020318932065429784,
+        "lt_0_10_count": 3,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_050",
+        "input": "physics_mvp_runs/current/round_050/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_050/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.020319408902587988,
+        "lt_0_10_count": 4,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_006",
+        "input": "physics_mvp_runs/current/round_006/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_006/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.02124431977013419,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_001",
+        "input": "physics_mvp_runs/current/round_001/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_001/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.0218861337860492,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_398",
+        "input": "physics_mvp_runs/current/round_398/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_398/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.02252938553745576,
+        "lt_0_10_count": 7,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_006",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_006/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_006/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.02268267073176533,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_010",
+        "input": "physics_mvp_runs/current/round_010/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_010/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.023462302265382817,
+        "lt_0_10_count": 6,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_011",
+        "input": "physics_mvp_runs/current/round_011/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_011/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.023462302265382817,
+        "lt_0_10_count": 4,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_012",
+        "input": "physics_mvp_runs/current/round_012/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_012/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.023462302265382817,
+        "lt_0_10_count": 7,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_013",
+        "input": "physics_mvp_runs/current/round_013/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_013/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.023462302265382817,
+        "lt_0_10_count": 4,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_014",
+        "input": "physics_mvp_runs/current/round_014/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_014/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.023462302265382817,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_015",
+        "input": "physics_mvp_runs/current/round_015/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_015/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.023462302265382817,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_090",
+        "input": "physics_mvp_runs/current/round_090/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_090/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.023462302265382817,
+        "lt_0_10_count": 4,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_091",
+        "input": "physics_mvp_runs/current/round_091/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_091/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.02346277910254102,
+        "lt_0_10_count": 4,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_092",
+        "input": "physics_mvp_runs/current/round_092/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_092/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.02346277910254102,
+        "lt_0_10_count": 4,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_201",
+        "input": "physics_mvp_runs/current/round_201/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_201/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.024839653656005822,
+        "lt_0_10_count": 3,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_110",
+        "input": "physics_mvp_runs/current/round_110/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_110/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.025248191731932934,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_016",
+        "input": "physics_mvp_runs/current/round_016/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_016/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.025509594201938768,
+        "lt_0_10_count": 4,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_005",
+        "input": "physics_mvp_runs/current/round_005/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_005/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.02590365933601735,
+        "lt_0_10_count": 7,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_003",
+        "input": "physics_mvp_runs/current/round_003/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_003/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.026746815441882177,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_001",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_001/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_001/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.02695996611035323,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_322",
+        "input": "physics_mvp_runs/current/round_322/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_322/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.027149881674072063,
+        "lt_0_10_count": 6,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_022",
+        "input": "physics_mvp_runs/current/round_022/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_022/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.027392595404523767,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_026",
+        "input": "physics_mvp_runs/current/round_026/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_026/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.027392595404523767,
+        "lt_0_10_count": 10,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_001",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_001/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_001/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.02766669221696283,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_017",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_017/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_017/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.027952975233147104,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_002",
+        "input": "physics_mvp_runs/current/round_002/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_002/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.029113992635001473,
+        "lt_0_10_count": 6,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_080",
+        "input": "physics_mvp_runs/current/round_080/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_080/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.03018140023111915,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_006",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_006/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_006/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.03094525107910151,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_018",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_018/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_018/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.03126967501330746,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_008",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_008/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_008/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.031710643739009114,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_081",
+        "input": "physics_mvp_runs/current/round_081/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_081/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.031793805194499036,
+        "lt_0_10_count": 8,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_082",
+        "input": "physics_mvp_runs/current/round_082/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_082/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.031793805194499036,
+        "lt_0_10_count": 7,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_011",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_011/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_011/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.032310374242751294,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_020",
+        "input": "physics_mvp_runs/current/round_020/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_020/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.03878038673342665,
+        "lt_0_10_count": 9,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_040",
+        "input": "physics_mvp_runs/current/round_040/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_040/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.043176568640869384,
+        "lt_0_10_count": 2,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "physics_mvp_runs/current/round_053",
+        "input": "physics_mvp_runs/current/round_053/input.json",
+        "ranked_e_hull": "physics_mvp_runs/current/round_053/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.043185657987060644,
+        "lt_0_10_count": 2,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T043519Z_attempt001/iter_001",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T043519Z_attempt001/iter_001/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T043519Z_attempt001/iter_001/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.04388449595989474,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_002",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_002/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260628T113833Z_attempt001/iter_002/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.07744169481125374,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_007",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_007/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T060822Z_attempt001/iter_007/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.08759587334095009,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      },
+      {
+        "round": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T032013Z_attempt001/iter_004",
+        "input": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T032013Z_attempt001/iter_004/input.json",
+        "ranked_e_hull": "xy_runs/experience_xy_sequential_single_mattergen_densitycap_mg5090cu128_20260627T032013Z_attempt001/iter_004/analysis/e_hull_ranked.csv",
+        "best_e_hull": 0.09460888689767177,
+        "lt_0_10_count": 1,
+        "strict_lt_0_count": 0
+      }
+    ]
+  },
+  "focus_templates": [
+    "perovskite",
+    "double_perovskite",
+    "spinel",
+    "rocksalt",
+    "rutile",
+    "delafossite",
+    "fluorite",
+    "antifluorite",
+    "wurtzite",
+    "zincblende"
+  ],
+  "template_target_counts": {
+    "perovskite": 180,
+    "double_perovskite": 180,
+    "spinel": 120,
+    "rocksalt": 120,
+    "rutile": 90,
+    "delafossite": 90,
+    "fluorite": 80,
+    "antifluorite": 60,
+    "wurtzite": 40,
+    "zincblende": 40
+  },
+  "fallback_template_order": [
+    "perovskite",
+    "double_perovskite",
+    "spinel",
+    "rocksalt",
+    "rutile",
+    "delafossite",
+    "fluorite",
+    "antifluorite",
+    "wurtzite",
+    "zincblende"
+  ],
+  "boost_elements": [
+    "Li",
+    "Na",
+    "K",
+    "Rb",
+    "Cs",
+    "Mg",
+    "Cd",
+    "Mn",
+    "Tl",
+    "Zn",
+    "In",
+    "Ga",
+    "P",
+    "B",
+    "Si",
+    "Al"
+  ],
+  "avoid_elements": [
+    "Be",
+    "Eu",
+    "Pb",
+    "Bi",
+    "Ce",
+    "Hf",
+    "Ta",
+    "Mo",
+    "W"
+  ],
+  "preferred_anions": [
+    "Br",
+    "F",
+    "S",
+    "O",
+    "N",
+    "Cl",
+    "Se"
+  ],
+  "template_rules": {
+    "perovskite": {
+      "preferred_anions": [
+        "Br",
+        "F",
+        "O",
+        "S"
+      ],
+      "role_boost_elements": {
+        "A": [
+          "Rb",
+          "Cs",
+          "K",
+          "Na",
+          "Li"
+        ],
+        "B": [
+          "Cd",
+          "Mn",
+          "Mg",
+          "Zn",
+          "In",
+          "Ga"
+        ]
+      }
+    },
+    "double_perovskite": {
+      "preferred_anions": [
+        "Br",
+        "F",
+        "O"
+      ],
+      "role_boost_elements": {
+        "A": [
+          "Rb",
+          "Cs",
+          "K",
+          "Na"
+        ],
+        "B": [
+          "Cd",
+          "Mn",
+          "Mg",
+          "Zn"
+        ],
+        "B2": [
+          "Mn",
+          "Cd",
+          "Zn",
+          "In",
+          "Ga"
+        ]
+      }
+    },
+    "spinel": {
+      "preferred_anions": [
+        "O",
+        "S",
+        "N"
+      ],
+      "role_boost_elements": {
+        "A": [
+          "Mg",
+          "Zn",
+          "Mn",
+          "Cd"
+        ],
+        "B": [
+          "Al",
+          "Ga",
+          "In",
+          "Mn",
+          "Fe"
+        ]
+      }
+    },
+    "rocksalt": {
+      "preferred_anions": [
+        "S",
+        "O",
+        "Br",
+        "Cl",
+        "F"
+      ],
+      "boost_elements": [
+        "Na",
+        "K",
+        "Li",
+        "Mg",
+        "Cd",
+        "Mn"
+      ]
+    },
+    "rutile": {
+      "preferred_anions": [
+        "O",
+        "F"
+      ],
+      "boost_elements": [
+        "Mg",
+        "Mn",
+        "Ti",
+        "Si",
+        "Sn"
+      ]
+    },
+    "delafossite": {
+      "preferred_anions": [
+        "O",
+        "S"
+      ],
+      "role_boost_elements": {
+        "A": [
+          "Li",
+          "Na",
+          "K",
+          "Rb",
+          "Cu",
+          "Ag"
+        ],
+        "B": [
+          "Al",
+          "Ga",
+          "In",
+          "Fe",
+          "Mn"
+        ]
+      }
+    }
+  },
+  "formula_probes": [
+    {
+      "id": "xy_rb_cd_br_perovskite",
+      "family": "Rb/Cd bromide cage",
+      "template": "perovskite",
+      "roles": {
+        "A": [
+          "Rb",
+          1
+        ],
+        "B": [
+          "Cd",
+          2
+        ],
+        "X": [
+          "Br",
+          -1
+        ]
+      }
+    },
+    {
+      "id": "xy_cs_cd_br_perovskite",
+      "family": "Cs/Cd bromide cage",
+      "template": "perovskite",
+      "roles": {
+        "A": [
+          "Cs",
+          1
+        ],
+        "B": [
+          "Cd",
+          2
+        ],
+        "X": [
+          "Br",
+          -1
+        ]
+      }
+    },
+    {
+      "id": "xy_rb_mn_br_perovskite",
+      "family": "Rb/Mn bromide cage",
+      "template": "perovskite",
+      "roles": {
+        "A": [
+          "Rb",
+          1
+        ],
+        "B": [
+          "Mn",
+          2
+        ],
+        "X": [
+          "Br",
+          -1
+        ]
+      }
+    },
+    {
+      "id": "xy_cs_mn_br_perovskite",
+      "family": "Cs/Mn bromide cage",
+      "template": "perovskite",
+      "roles": {
+        "A": [
+          "Cs",
+          1
+        ],
+        "B": [
+          "Mn",
+          2
+        ],
+        "X": [
+          "Br",
+          -1
+        ]
+      }
+    },
+    {
+      "id": "xy_rb_cd_mn_br_double",
+      "family": "mixed Cd/Mn bromide double perovskite",
+      "template": "double_perovskite",
+      "roles": {
+        "A": [
+          "Rb",
+          1
+        ],
+        "B": [
+          "Cd",
+          2
+        ],
+        "B2": [
+          "Mn",
+          2
+        ],
+        "X": [
+          "Br",
+          -1
+        ]
+      }
+    },
+    {
+      "id": "xy_cs_cd_mn_br_double",
+      "family": "mixed Cs Cd/Mn bromide double perovskite",
+      "template": "double_perovskite",
+      "roles": {
+        "A": [
+          "Cs",
+          1
+        ],
+        "B": [
+          "Cd",
+          2
+        ],
+        "B2": [
+          "Mn",
+          2
+        ],
+        "X": [
+          "Br",
+          -1
+        ]
+      }
+    },
+    {
+      "id": "af_mg_al_o_spinel",
+      "family": "A-F Mg/Al oxide compact spinel",
+      "template": "spinel",
+      "roles": {
+        "A": [
+          "Mg",
+          2
+        ],
+        "B": [
+          "Al",
+          3
+        ],
+        "X": [
+          "O",
+          -2
+        ]
+      }
+    },
+    {
+      "id": "af_zn_al_o_spinel",
+      "family": "compact Zn/Al oxide spinel",
+      "template": "spinel",
+      "roles": {
+        "A": [
+          "Zn",
+          2
+        ],
+        "B": [
+          "Al",
+          3
+        ],
+        "X": [
+          "O",
+          -2
+        ]
+      }
+    },
+    {
+      "id": "af_na_s_rocksalt",
+      "family": "alkali sulfide near-stable",
+      "template": "rocksalt",
+      "roles": {
+        "A": [
+          "Na",
+          2
+        ],
+        "X": [
+          "S",
+          -2
+        ]
+      }
+    },
+    {
+      "id": "af_k_s_rocksalt",
+      "family": "alkali sulfide near-stable",
+      "template": "rocksalt",
+      "roles": {
+        "A": [
+          "K",
+          1
+        ],
+        "X": [
+          "S",
+          -1
+        ]
+      }
+    }
+  ]
+}

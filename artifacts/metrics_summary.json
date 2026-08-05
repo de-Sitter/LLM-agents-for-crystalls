@@ -1,0 +1,48 @@
+{
+  "evaluation_scope": "in_sample",
+  "total_structures": 1000,
+  "sun": {
+    "threshold_eV_per_atom": 0.0,
+    "count": 344,
+    "rate": 0.344
+  },
+  "stability_bins": {
+    "e_hull_lt_0": 344,
+    "e_hull_0_to_0.03": 248,
+    "e_hull_0.03_to_0.10": 292,
+    "e_hull_ge_0.10": 116
+  },
+  "stability_stats": {
+    "min_e_hull": -0.262347293347581,
+    "max_e_hull": 0.9497405517135178,
+    "mean_e_hull": 0.024828125953816112,
+    "median_e_hull": 0.022119301443730643,
+    "std_e_hull": 0.10757421435569513
+  },
+  "validity": {
+    "structural_validity": 0.037,
+    "composition_validity": 1.0,
+    "valid_structures": 37,
+    "valid_compositions": 1000,
+    "total_structures": 1000
+  },
+  "composition_diversity": {
+    "rate": 1.0,
+    "unique_compositions": 1000
+  },
+  "structural_diversity": {
+    "rate": 1.0,
+    "unique_structures": 1000
+  },
+  "novelty": {
+    "sun_score": 0.344,
+    "both_novel_count": 1000,
+    "composition_novelty_rate": 1.0,
+    "structural_novelty_rate": 1.0
+  },
+  "interpretation": [
+    "All metrics are evaluator-specific in-sample results, not out-of-sample or DFT validation.",
+    "Evaluator structural_validity is 37/1000 under its volume-per-atom rule.",
+    "success_rate.validity_rate uses successful oracle evaluations and is a different validity concept."
+  ]
+}

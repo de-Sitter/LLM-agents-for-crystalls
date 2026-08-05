@@ -1,0 +1,411 @@
+{
+  "strategy_name": "public_release_template_baseline",
+  "compiled_from": "Portable projection of the final strategy; historical elite replay is disabled because run trees are not published.",
+  "notes": [
+    "This strategy generates a deterministic template baseline and does not recreate the frozen MatterGen result.",
+    "The evaluated 1000-structure result is published separately as input.json."
+  ],
+  "elite_replay": {
+    "enabled": false,
+    "e_hull_max": 0.1,
+    "max_count": 0,
+    "max_per_formula": 100,
+    "sources": []
+  },
+  "focus_templates": [
+    "perovskite",
+    "double_perovskite",
+    "spinel",
+    "rocksalt",
+    "rutile",
+    "delafossite",
+    "fluorite",
+    "antifluorite",
+    "wurtzite",
+    "zincblende"
+  ],
+  "template_target_counts": {
+    "perovskite": 180,
+    "double_perovskite": 180,
+    "spinel": 120,
+    "rocksalt": 120,
+    "rutile": 90,
+    "delafossite": 90,
+    "fluorite": 80,
+    "antifluorite": 60,
+    "wurtzite": 40,
+    "zincblende": 40
+  },
+  "fallback_template_order": [
+    "perovskite",
+    "double_perovskite",
+    "spinel",
+    "rocksalt",
+    "rutile",
+    "delafossite",
+    "fluorite",
+    "antifluorite",
+    "wurtzite",
+    "zincblende"
+  ],
+  "boost_elements": [
+    "Li",
+    "Na",
+    "K",
+    "Rb",
+    "Cs",
+    "Mg",
+    "Cd",
+    "Mn",
+    "Tl",
+    "Zn",
+    "In",
+    "Ga",
+    "P",
+    "B",
+    "Si",
+    "Al"
+  ],
+  "avoid_elements": [
+    "Be",
+    "Eu",
+    "Pb",
+    "Bi",
+    "Ce",
+    "Hf",
+    "Ta",
+    "Mo",
+    "W"
+  ],
+  "preferred_anions": [
+    "Br",
+    "F",
+    "S",
+    "O",
+    "N",
+    "Cl",
+    "Se"
+  ],
+  "template_rules": {
+    "perovskite": {
+      "preferred_anions": [
+        "Br",
+        "F",
+        "O",
+        "S"
+      ],
+      "role_boost_elements": {
+        "A": [
+          "Rb",
+          "Cs",
+          "K",
+          "Na",
+          "Li"
+        ],
+        "B": [
+          "Cd",
+          "Mn",
+          "Mg",
+          "Zn",
+          "In",
+          "Ga"
+        ]
+      }
+    },
+    "double_perovskite": {
+      "preferred_anions": [
+        "Br",
+        "F",
+        "O"
+      ],
+      "role_boost_elements": {
+        "A": [
+          "Rb",
+          "Cs",
+          "K",
+          "Na"
+        ],
+        "B": [
+          "Cd",
+          "Mn",
+          "Mg",
+          "Zn"
+        ],
+        "B2": [
+          "Mn",
+          "Cd",
+          "Zn",
+          "In",
+          "Ga"
+        ]
+      }
+    },
+    "spinel": {
+      "preferred_anions": [
+        "O",
+        "S",
+        "N"
+      ],
+      "role_boost_elements": {
+        "A": [
+          "Mg",
+          "Zn",
+          "Mn",
+          "Cd"
+        ],
+        "B": [
+          "Al",
+          "Ga",
+          "In",
+          "Mn",
+          "Fe"
+        ]
+      }
+    },
+    "rocksalt": {
+      "preferred_anions": [
+        "S",
+        "O",
+        "Br",
+        "Cl",
+        "F"
+      ],
+      "boost_elements": [
+        "Na",
+        "K",
+        "Li",
+        "Mg",
+        "Cd",
+        "Mn"
+      ]
+    },
+    "rutile": {
+      "preferred_anions": [
+        "O",
+        "F"
+      ],
+      "boost_elements": [
+        "Mg",
+        "Mn",
+        "Ti",
+        "Si",
+        "Sn"
+      ]
+    },
+    "delafossite": {
+      "preferred_anions": [
+        "O",
+        "S"
+      ],
+      "role_boost_elements": {
+        "A": [
+          "Li",
+          "Na",
+          "K",
+          "Rb",
+          "Cu",
+          "Ag"
+        ],
+        "B": [
+          "Al",
+          "Ga",
+          "In",
+          "Fe",
+          "Mn"
+        ]
+      }
+    }
+  },
+  "formula_probes": [
+    {
+      "id": "xy_rb_cd_br_perovskite",
+      "family": "Rb/Cd bromide cage",
+      "template": "perovskite",
+      "roles": {
+        "A": [
+          "Rb",
+          1
+        ],
+        "B": [
+          "Cd",
+          2
+        ],
+        "X": [
+          "Br",
+          -1
+        ]
+      }
+    },
+    {
+      "id": "xy_cs_cd_br_perovskite",
+      "family": "Cs/Cd bromide cage",
+      "template": "perovskite",
+      "roles": {
+        "A": [
+          "Cs",
+          1
+        ],
+        "B": [
+          "Cd",
+          2
+        ],
+        "X": [
+          "Br",
+          -1
+        ]
+      }
+    },
+    {
+      "id": "xy_rb_mn_br_perovskite",
+      "family": "Rb/Mn bromide cage",
+      "template": "perovskite",
+      "roles": {
+        "A": [
+          "Rb",
+          1
+        ],
+        "B": [
+          "Mn",
+          2
+        ],
+        "X": [
+          "Br",
+          -1
+        ]
+      }
+    },
+    {
+      "id": "xy_cs_mn_br_perovskite",
+      "family": "Cs/Mn bromide cage",
+      "template": "perovskite",
+      "roles": {
+        "A": [
+          "Cs",
+          1
+        ],
+        "B": [
+          "Mn",
+          2
+        ],
+        "X": [
+          "Br",
+          -1
+        ]
+      }
+    },
+    {
+      "id": "xy_rb_cd_mn_br_double",
+      "family": "mixed Cd/Mn bromide double perovskite",
+      "template": "double_perovskite",
+      "roles": {
+        "A": [
+          "Rb",
+          1
+        ],
+        "B": [
+          "Cd",
+          2
+        ],
+        "B2": [
+          "Mn",
+          2
+        ],
+        "X": [
+          "Br",
+          -1
+        ]
+      }
+    },
+    {
+      "id": "xy_cs_cd_mn_br_double",
+      "family": "mixed Cs Cd/Mn bromide double perovskite",
+      "template": "double_perovskite",
+      "roles": {
+        "A": [
+          "Cs",
+          1
+        ],
+        "B": [
+          "Cd",
+          2
+        ],
+        "B2": [
+          "Mn",
+          2
+        ],
+        "X": [
+          "Br",
+          -1
+        ]
+      }
+    },
+    {
+      "id": "af_mg_al_o_spinel",
+      "family": "A-F Mg/Al oxide compact spinel",
+      "template": "spinel",
+      "roles": {
+        "A": [
+          "Mg",
+          2
+        ],
+        "B": [
+          "Al",
+          3
+        ],
+        "X": [
+          "O",
+          -2
+        ]
+      }
+    },
+    {
+      "id": "af_zn_al_o_spinel",
+      "family": "compact Zn/Al oxide spinel",
+      "template": "spinel",
+      "roles": {
+        "A": [
+          "Zn",
+          2
+        ],
+        "B": [
+          "Al",
+          3
+        ],
+        "X": [
+          "O",
+          -2
+        ]
+      }
+    },
+    {
+      "id": "af_na_s_rocksalt",
+      "family": "alkali sulfide near-stable",
+      "template": "rocksalt",
+      "roles": {
+        "A": [
+          "Na",
+          2
+        ],
+        "X": [
+          "S",
+          -2
+        ]
+      }
+    },
+    {
+      "id": "af_k_s_rocksalt",
+      "family": "alkali sulfide near-stable",
+      "template": "rocksalt",
+      "roles": {
+        "A": [
+          "K",
+          1
+        ],
+        "X": [
+          "S",
+          -1
+        ]
+      }
+    }
+  ]
+}

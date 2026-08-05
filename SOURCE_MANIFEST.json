@@ -1,0 +1,373 @@
+{
+  "package_target": "github_release",
+  "copied_files": [
+    {
+      "source": "final_version/src/crystal_llm/__init__.py",
+      "destination": "src/crystal_llm/__init__.py",
+      "source_sha256": "c388dc493dc46be0d054d41f542cee348d6b9d8564c630108a606063c6b227df",
+      "destination_sha256": "c388dc493dc46be0d054d41f542cee348d6b9d8564c630108a606063c6b227df"
+    },
+    {
+      "source": "final_version/src/crystal_llm/analyze_evaluator_run.py",
+      "destination": "src/crystal_llm/analyze_evaluator_run.py",
+      "source_sha256": "312fd8a1196f2813d516e42a4cf5b1f42369383bc83b0ad1cf451179a50b0c8b",
+      "destination_sha256": "312fd8a1196f2813d516e42a4cf5b1f42369383bc83b0ad1cf451179a50b0c8b"
+    },
+    {
+      "source": "final_version/src/crystal_llm/build_mp_candidate_pool.py",
+      "destination": "src/crystal_llm/build_mp_candidate_pool.py",
+      "source_sha256": "7db8e30538aac0b92239dfe657a4867d802c77c91f0d71246ef64a9e76b23152",
+      "destination_sha256": "7db8e30538aac0b92239dfe657a4867d802c77c91f0d71246ef64a9e76b23152"
+    },
+    {
+      "source": "final_version/src/crystal_llm/build_round_context.py",
+      "destination": "src/crystal_llm/build_round_context.py",
+      "source_sha256": "1ae9b5ca6b29cc2fe3ee807b84ca63724d63dd064b3644382bab1a88bcb65381",
+      "destination_sha256": "1ae9b5ca6b29cc2fe3ee807b84ca63724d63dd064b3644382bab1a88bcb65381"
+    },
+    {
+      "source": "final_version/src/crystal_llm/chemistry.py",
+      "destination": "src/crystal_llm/chemistry.py",
+      "source_sha256": "32235f97da39999162d6d7c568e54f3fe696b368faea8cbc3184f88f5fd74912",
+      "destination_sha256": "32235f97da39999162d6d7c568e54f3fe696b368faea8cbc3184f88f5fd74912"
+    },
+    {
+      "source": "final_version/src/crystal_llm/compact_hypothesis_memory.py",
+      "destination": "src/crystal_llm/compact_hypothesis_memory.py",
+      "source_sha256": "aa17088d9644ecb6458096ee76d6e32269551fd3cd88b2e62b28a9bda6153bed",
+      "destination_sha256": "aa17088d9644ecb6458096ee76d6e32269551fd3cd88b2e62b28a9bda6153bed"
+    },
+    {
+      "source": "final_version/src/crystal_llm/compile_strategy.py",
+      "destination": "src/crystal_llm/compile_strategy.py",
+      "source_sha256": "9f872e68cf40010b2cb589f662e964c99f265957b413a2193e910551b622ee42",
+      "destination_sha256": "9f872e68cf40010b2cb589f662e964c99f265957b413a2193e910551b622ee42"
+    },
+    {
+      "source": "final_version/src/crystal_llm/evolve_single_structure.py",
+      "destination": "src/crystal_llm/evolve_single_structure.py",
+      "source_sha256": "d8160603b355ed218cef2d145541aa8fd7588cc0ac6ca2515aeff68bacee0656",
+      "destination_sha256": "d8160603b355ed218cef2d145541aa8fd7588cc0ac6ca2515aeff68bacee0656"
+    },
+    {
+      "source": "final_version/src/crystal_llm/experience.py",
+      "destination": "src/crystal_llm/experience.py",
+      "source_sha256": "b5f2c22b789ae1bd3682597d4109aef3eb442424dc2bfd70cd87c45fddb4cfff",
+      "destination_sha256": "b5f2c22b789ae1bd3682597d4109aef3eb442424dc2bfd70cd87c45fddb4cfff"
+    },
+    {
+      "source": "final_version/src/crystal_llm/filters.py",
+      "destination": "src/crystal_llm/filters.py",
+      "source_sha256": "59dceb0d3a26caf2b021b7e46c42e8da44fa9e451ef763383d5d5a97ca9d8a32",
+      "destination_sha256": "59dceb0d3a26caf2b021b7e46c42e8da44fa9e451ef763383d5d5a97ca9d8a32"
+    },
+    {
+      "source": "final_version/src/crystal_llm/generate.py",
+      "destination": "src/crystal_llm/generate.py",
+      "source_sha256": "4c74cf86ffcd2fd1421d6c0562662103aaf8abe101cc1294d948b4ce99122b7c",
+      "destination_sha256": "4c74cf86ffcd2fd1421d6c0562662103aaf8abe101cc1294d948b4ce99122b7c"
+    },
+    {
+      "source": "final_version/src/crystal_llm/hypothesis_schema.py",
+      "destination": "src/crystal_llm/hypothesis_schema.py",
+      "source_sha256": "fa965e01db298a600bceffe32a403b886196133d41cdbd28b0515e0af08d3b53",
+      "destination_sha256": "fa965e01db298a600bceffe32a403b886196133d41cdbd28b0515e0af08d3b53"
+    },
+    {
+      "source": "final_version/src/crystal_llm/llm_client.py",
+      "destination": "src/crystal_llm/llm_client.py",
+      "source_sha256": "86dfd4dece9c1a25336a0a6fece2e7264c9bfeaaa5b06283329a158fc9ea27b4",
+      "destination_sha256": "86dfd4dece9c1a25336a0a6fece2e7264c9bfeaaa5b06283329a158fc9ea27b4"
+    },
+    {
+      "source": "final_version/src/crystal_llm/llm_compile_scorer.py",
+      "destination": "src/crystal_llm/llm_compile_scorer.py",
+      "source_sha256": "29fe3ed981b81231ea1653daa2ae750d01bcccdeca8cbde34f8f5159519a03cc",
+      "destination_sha256": "29fe3ed981b81231ea1653daa2ae750d01bcccdeca8cbde34f8f5159519a03cc"
+    },
+    {
+      "source": "final_version/src/crystal_llm/llm_debate_edit.py",
+      "destination": "src/crystal_llm/llm_debate_edit.py",
+      "source_sha256": "44ddcb5ee5258fb345931b2d7aff1f564cd441945c5127b451a046aeefae3a60",
+      "destination_sha256": "44ddcb5ee5258fb345931b2d7aff1f564cd441945c5127b451a046aeefae3a60"
+    },
+    {
+      "source": "final_version/src/crystal_llm/llm_debate_hypotheses.py",
+      "destination": "src/crystal_llm/llm_debate_hypotheses.py",
+      "source_sha256": "93abe615918820b39055da10ca53032bdf9d2bc2f2933511fe5e4190c71600e0",
+      "destination_sha256": "93abe615918820b39055da10ca53032bdf9d2bc2f2933511fe5e4190c71600e0"
+    },
+    {
+      "source": "final_version/src/crystal_llm/llm_debate_rules.py",
+      "destination": "src/crystal_llm/llm_debate_rules.py",
+      "source_sha256": "a3879c9fc7792e01e939e65c6a97b2b4e2b8cc3dcbf5ec8d2251d25eddb40487",
+      "destination_sha256": "a3879c9fc7792e01e939e65c6a97b2b4e2b8cc3dcbf5ec8d2251d25eddb40487"
+    },
+    {
+      "source": "final_version/src/crystal_llm/llm_materialize_candidates.py",
+      "destination": "src/crystal_llm/llm_materialize_candidates.py",
+      "source_sha256": "1b26b1269ef93c971d58b80477b323a70376d183d15582fb13e5cbd6dfc597e1",
+      "destination_sha256": "1b26b1269ef93c971d58b80477b323a70376d183d15582fb13e5cbd6dfc597e1"
+    },
+    {
+      "source": "final_version/src/crystal_llm/llm_reflect_evolution.py",
+      "destination": "src/crystal_llm/llm_reflect_evolution.py",
+      "source_sha256": "9d2843ddb1a2f58cb155ff729549d004d5c5026a8e2719fe9fbf1e5c7a5fd938",
+      "destination_sha256": "9d2843ddb1a2f58cb155ff729549d004d5c5026a8e2719fe9fbf1e5c7a5fd938"
+    },
+    {
+      "source": "final_version/src/crystal_llm/llm_reflect_round.py",
+      "destination": "src/crystal_llm/llm_reflect_round.py",
+      "source_sha256": "e934d1a691fc579e6fd4b67b296d80a5aeca811b67bbd58a11d7df536fd40545",
+      "destination_sha256": "e934d1a691fc579e6fd4b67b296d80a5aeca811b67bbd58a11d7df536fd40545"
+    },
+    {
+      "source": "final_version/src/crystal_llm/llm_review_candidates.py",
+      "destination": "src/crystal_llm/llm_review_candidates.py",
+      "source_sha256": "48be60df2e565acc1c9858ddc8d55890d8d0e408156e0b4d0fb195d566766ec0",
+      "destination_sha256": "48be60df2e565acc1c9858ddc8d55890d8d0e408156e0b4d0fb195d566766ec0"
+    },
+    {
+      "source": "final_version/src/crystal_llm/local_agent_runtime.py",
+      "destination": "src/crystal_llm/local_agent_runtime.py",
+      "source_sha256": "7d20f81fcbdaa540c99fa64abe493b42e093db50dba472f72f75ea1e8c70dfe9",
+      "destination_sha256": "7d20f81fcbdaa540c99fa64abe493b42e093db50dba472f72f75ea1e8c70dfe9"
+    },
+    {
+      "source": "final_version/src/crystal_llm/local_agent_smoke.py",
+      "destination": "src/crystal_llm/local_agent_smoke.py",
+      "source_sha256": "dea51ba6695e79829ffee0069cc91f86c1796a7a3a862fc772779045de15fd9e",
+      "destination_sha256": "dea51ba6695e79829ffee0069cc91f86c1796a7a3a862fc772779045de15fd9e"
+    },
+    {
+      "source": "final_version/src/crystal_llm/material_physics_schema.py",
+      "destination": "src/crystal_llm/material_physics_schema.py",
+      "source_sha256": "5a0961d407552f9fa3ed6a6bc7bc05e2d8f51efaa560a4f75da43e387baf582b",
+      "destination_sha256": "5a0961d407552f9fa3ed6a6bc7bc05e2d8f51efaa560a4f75da43e387baf582b"
+    },
+    {
+      "source": "final_version/src/crystal_llm/memory.py",
+      "destination": "src/crystal_llm/memory.py",
+      "source_sha256": "059e1dbf567ce3e52a84875ea72e0298806b1261a99e68880a3d7a36207c175a",
+      "destination_sha256": "059e1dbf567ce3e52a84875ea72e0298806b1261a99e68880a3d7a36207c175a"
+    },
+    {
+      "source": "final_version/src/crystal_llm/merge_evaluator_results.py",
+      "destination": "src/crystal_llm/merge_evaluator_results.py",
+      "source_sha256": "f52eaf6fba907e17afe16572e97e7338d4805e393a7a1d17862491258346664a",
+      "destination_sha256": "f52eaf6fba907e17afe16572e97e7338d4805e393a7a1d17862491258346664a"
+    },
+    {
+      "source": "final_version/src/crystal_llm/plan_next_round.py",
+      "destination": "src/crystal_llm/plan_next_round.py",
+      "source_sha256": "2ccd2df39ca9a7896d9414fab5c1d7530e4c007a0b32a77ec945ac818391a3f8",
+      "destination_sha256": "2ccd2df39ca9a7896d9414fab5c1d7530e4c007a0b32a77ec945ac818391a3f8"
+    },
+    {
+      "source": "final_version/src/crystal_llm/prepare_training.py",
+      "destination": "src/crystal_llm/prepare_training.py",
+      "source_sha256": "0574e549d099e40024ad52455773f4e0c3225c568212d76ca80aff00c7a32a8b",
+      "destination_sha256": "0574e549d099e40024ad52455773f4e0c3225c568212d76ca80aff00c7a32a8b"
+    },
+    {
+      "source": "final_version/src/crystal_llm/run_candidate_scorer_mvp.py",
+      "destination": "src/crystal_llm/run_candidate_scorer_mvp.py",
+      "source_sha256": "b9bd3e5be79f891d83a56bffc095ea8f6a2211b5238838afb122ae7fa66d0607",
+      "destination_sha256": "b9bd3e5be79f891d83a56bffc095ea8f6a2211b5238838afb122ae7fa66d0607"
+    },
+    {
+      "source": "final_version/src/crystal_llm/run_controller.py",
+      "destination": "src/crystal_llm/run_controller.py",
+      "source_sha256": "ec94136ba338c571634ef55d61dd0ba8cdb6f76367dcb900a30176466af7f38a",
+      "destination_sha256": "ec94136ba338c571634ef55d61dd0ba8cdb6f76367dcb900a30176466af7f38a"
+    },
+    {
+      "source": "final_version/src/crystal_llm/run_hypothesis_mvp.py",
+      "destination": "src/crystal_llm/run_hypothesis_mvp.py",
+      "source_sha256": "86d67a2b9e76e740334205b99eb6afae5f3fbec9bfdc42b566330f1e806e9e5f",
+      "destination_sha256": "86d67a2b9e76e740334205b99eb6afae5f3fbec9bfdc42b566330f1e806e9e5f"
+    },
+    {
+      "source": "final_version/src/crystal_llm/run_material_physics_mvp.py",
+      "destination": "src/crystal_llm/run_material_physics_mvp.py",
+      "source_sha256": "f52b4e59c80c4fd04efc8931ac1a0c4ab99a9131921fcdf24c3bea30a8007f3f",
+      "destination_sha256": "ac588b2c8ff4974f2c632806f1b1d8c97de1704e5f2bce01be5e9a6eda3974d7"
+    },
+    {
+      "source": "final_version/src/crystal_llm/run_xy_experience_debate.py",
+      "destination": "src/crystal_llm/run_xy_experience_debate.py",
+      "source_sha256": "b722521cc7c8a0f91e5c4c52c99b93ad43b84a70f234f14f2e942b567eb292c2",
+      "destination_sha256": "2cb85c788fa89610626d62efa5ea95d06eada6103faa63a8ed4a24e415efa271"
+    },
+    {
+      "source": "final_version/src/crystal_llm/score_candidate_pool.py",
+      "destination": "src/crystal_llm/score_candidate_pool.py",
+      "source_sha256": "3a544dc56baf240496830af4d0ef984e2d2a29996794547b5465c30f39a9156c",
+      "destination_sha256": "3a544dc56baf240496830af4d0ef984e2d2a29996794547b5465c30f39a9156c"
+    },
+    {
+      "source": "final_version/src/crystal_llm/scorer_dsl.py",
+      "destination": "src/crystal_llm/scorer_dsl.py",
+      "source_sha256": "01715c23e9263f3805e84fca85afe9b8c52c6c820d9243d9ad0d22ee6538dce0",
+      "destination_sha256": "01715c23e9263f3805e84fca85afe9b8c52c6c820d9243d9ad0d22ee6538dce0"
+    },
+    {
+      "source": "final_version/src/crystal_llm/split_structures.py",
+      "destination": "src/crystal_llm/split_structures.py",
+      "source_sha256": "46999fbb06fa77689190676b11aabdf1980bb0707ec36ffd58eba81666e64bbf",
+      "destination_sha256": "46999fbb06fa77689190676b11aabdf1980bb0707ec36ffd58eba81666e64bbf"
+    },
+    {
+      "source": "final_version/src/crystal_llm/structure_edit.py",
+      "destination": "src/crystal_llm/structure_edit.py",
+      "source_sha256": "2aa168976ec943a8b040f19ec02e87a253846f6c9365911c3f4969df76d63d24",
+      "destination_sha256": "2aa168976ec943a8b040f19ec02e87a253846f6c9365911c3f4969df76d63d24"
+    },
+    {
+      "source": "final_version/src/crystal_llm/templates.py",
+      "destination": "src/crystal_llm/templates.py",
+      "source_sha256": "7137cdc1141052e8f9bc134457ae79beebc98cde460b6b27582ab75ec74c7f57",
+      "destination_sha256": "7137cdc1141052e8f9bc134457ae79beebc98cde460b6b27582ab75ec74c7f57"
+    },
+    {
+      "source": "final_version/src/crystal_llm/update_memory.py",
+      "destination": "src/crystal_llm/update_memory.py",
+      "source_sha256": "a147a04a8d30b8b2fc37cb70d9667d8433eaed4aad15b71eecd0829c5aab5428",
+      "destination_sha256": "a147a04a8d30b8b2fc37cb70d9667d8433eaed4aad15b71eecd0829c5aab5428"
+    },
+    {
+      "source": "final_version/src/crystal_llm/validate_output.py",
+      "destination": "src/crystal_llm/validate_output.py",
+      "source_sha256": "75bd94f1d13745d33c77070b9ceccf66cebcd33eea63ae419ef15eb7ac8fe8d3",
+      "destination_sha256": "75bd94f1d13745d33c77070b9ceccf66cebcd33eea63ae419ef15eb7ac8fe8d3"
+    },
+    {
+      "source": "final_version/src/crystal_llm/xy_sequential_supervisor.py",
+      "destination": "src/crystal_llm/xy_sequential_supervisor.py",
+      "source_sha256": "b83582ea7088ea6e8ee2d1893fd403ba4db48be65236b2cd284296df672fdf6b",
+      "destination_sha256": "b83582ea7088ea6e8ee2d1893fd403ba4db48be65236b2cd284296df672fdf6b"
+    },
+    {
+      "source": "final_version/tests/test_llm_client.py",
+      "destination": "tests/test_llm_client.py",
+      "source_sha256": "382c2278c3783501fa01f036b41ad13abb40b3d978caa72181db7f41f478a252",
+      "destination_sha256": "382c2278c3783501fa01f036b41ad13abb40b3d978caa72181db7f41f478a252"
+    },
+    {
+      "source": "final_version/tests/test_material_physics_mvp.py",
+      "destination": "tests/test_material_physics_mvp.py",
+      "source_sha256": "841179406842837f39b84787b24fd0e20527f2284513ece894aaed55f39ce812",
+      "destination_sha256": "0eccd662c1152c6b5998be02dbdea571db0fa5e73e53264264c3d3af09afb6fb"
+    },
+    {
+      "source": "final_version/tests/test_mattergen_adapter.py",
+      "destination": "tests/test_mattergen_adapter.py",
+      "source_sha256": "c2d0e735437658a1bfbfc4ca192f0fab74cfd0d3b86da608d4524cf543e3a86d",
+      "destination_sha256": "c2d0e735437658a1bfbfc4ca192f0fab74cfd0d3b86da608d4524cf543e3a86d"
+    },
+    {
+      "source": "final_version/tests/test_xy_experience_debate.py",
+      "destination": "tests/test_xy_experience_debate.py",
+      "source_sha256": "49a85a2c020b4f9123cb24297c08448b591efde9df76c2382798dce574b28c9f",
+      "destination_sha256": "fca933b826fcf0773a830c021ea12eb5d2eadf9785c4437762807a648d2e830b"
+    },
+    {
+      "source": "final_version/mattergen_backend_prototype/README.md",
+      "destination": "mattergen_backend_prototype/README.md",
+      "source_sha256": "86a9a87d7fc03dad0179ecafdea6d44b87a1535579db6bdaf2344bddce5c37da",
+      "destination_sha256": "86a9a87d7fc03dad0179ecafdea6d44b87a1535579db6bdaf2344bddce5c37da"
+    },
+    {
+      "source": "final_version/mattergen_backend_prototype/mattergen_adapter.py",
+      "destination": "mattergen_backend_prototype/mattergen_adapter.py",
+      "source_sha256": "72c27f92fb5dca615b06b6009e0db24190bddc82f61712fa0f3545d66192ffd7",
+      "destination_sha256": "72c27f92fb5dca615b06b6009e0db24190bddc82f61712fa0f3545d66192ffd7"
+    },
+    {
+      "source": "final_version/mattergen_backend_prototype/merge_benchmark_outputs.py",
+      "destination": "mattergen_backend_prototype/merge_benchmark_outputs.py",
+      "source_sha256": "835402208cfb8394974426e3642584a3300aaab14d58d3babf371e1fc37e1661",
+      "destination_sha256": "835402208cfb8394974426e3642584a3300aaab14d58d3babf371e1fc37e1661"
+    },
+    {
+      "source": "final_version/mattergen_backend_prototype/request_schema.json",
+      "destination": "mattergen_backend_prototype/request_schema.json",
+      "source_sha256": "edfb263bd115721a3d481dda8af9c63dc147a3c41250f1659a31b1cedaf6268b",
+      "destination_sha256": "edfb263bd115721a3d481dda8af9c63dc147a3c41250f1659a31b1cedaf6268b"
+    },
+    {
+      "source": "final_version/mattergen_backend_prototype/prompts/llm_mattergen_contract.md",
+      "destination": "mattergen_backend_prototype/prompts/llm_mattergen_contract.md",
+      "source_sha256": "ea58fccecd1e306be208b2b8ff6d4d55f48dba2bad2c31efc4c465ec3fa9a818",
+      "destination_sha256": "ea58fccecd1e306be208b2b8ff6d4d55f48dba2bad2c31efc4c465ec3fa9a818"
+    },
+    {
+      "source": "final_version/mattergen_backend_prototype/examples/ce_h_energy_above_hull_request.json",
+      "destination": "mattergen_backend_prototype/examples/ce_h_energy_above_hull_request.json",
+      "source_sha256": "9127b61c262f58c111e5c2081642b3bff7c0f07322202f3b0099fa647ed68e51",
+      "destination_sha256": "9127b61c262f58c111e5c2081642b3bff7c0f07322202f3b0099fa647ed68e51"
+    },
+    {
+      "source": "final_version/mattergen_backend_prototype/examples/re_as_exploration_request.json",
+      "destination": "mattergen_backend_prototype/examples/re_as_exploration_request.json",
+      "source_sha256": "2349e224de92fcb3d9b85b7cf84b7b044f6c22139b6ecc90e9bcdcebf0ed1af1",
+      "destination_sha256": "2349e224de92fcb3d9b85b7cf84b7b044f6c22139b6ecc90e9bcdcebf0ed1af1"
+    },
+    {
+      "source": "final_version/mattergen_backend_prototype/examples/smoke_ce_h_request.json",
+      "destination": "mattergen_backend_prototype/examples/smoke_ce_h_request.json",
+      "source_sha256": "1d0bdf885aad7aae9ab46a7233871b36d1854548a6720ffd91fac2ed8afee04f",
+      "destination_sha256": "86a413990d583a24dea1a6fc43eda0553d4c10a26c54d5fbc2dc2305fadc3476"
+    },
+    {
+      "source": "final_version/requirements.txt",
+      "destination": "requirements.txt",
+      "source_sha256": "4d884494140b44742a285f8f643821ecc0e6bf44e5a05c998ee9de76dbe2e498",
+      "destination_sha256": "4d884494140b44742a285f8f643821ecc0e6bf44e5a05c998ee9de76dbe2e498"
+    },
+    {
+      "source": "final_version/input.json",
+      "destination": "input.json",
+      "source_sha256": "baf2d0675273e4cec985edab63592b3a8bfedb07505354da6e07e9a2dbd4351f",
+      "destination_sha256": "baf2d0675273e4cec985edab63592b3a8bfedb07505354da6e07e9a2dbd4351f"
+    },
+    {
+      "source": "final_version/results.json",
+      "destination": "results.json",
+      "source_sha256": "5948df9579f8c867e8f02c8141ee479e7d9d10d52daf20c8efefdb86ac230be8",
+      "destination_sha256": "5948df9579f8c867e8f02c8141ee479e7d9d10d52daf20c8efefdb86ac230be8"
+    },
+    {
+      "source": "final_version/dynamic_cumulative_report.json",
+      "destination": "artifacts/dynamic_cumulative_report.json",
+      "source_sha256": "5ad7b505846b1d7ec773cc6b18499b156139f7eccb5982cbe93d7fbcfa0327d0",
+      "destination_sha256": "5ad7b505846b1d7ec773cc6b18499b156139f7eccb5982cbe93d7fbcfa0327d0"
+    },
+    {
+      "source": "final_version/中间数据汇总.md",
+      "destination": "artifacts/intermediate_data.md",
+      "source_sha256": "41830448e1c9a2e787605f036d4c0156511202aea59c6df264b1db927bb172cd",
+      "destination_sha256": "41830448e1c9a2e787605f036d4c0156511202aea59c6df264b1db927bb172cd"
+    },
+    {
+      "source": "final_version/strategies/final_submission_strategy.json",
+      "destination": "artifacts/final_submission_strategy.provenance.json",
+      "source_sha256": "96b211aa725b5e076de77c947670de6029641b6a5938a659661bb9e0548de97f",
+      "destination_sha256": "96b211aa725b5e076de77c947670de6029641b6a5938a659661bb9e0548de97f"
+    }
+  ],
+  "generated_files": [
+    "strategies/release_template_strategy.json",
+    "artifacts/final_materials.csv",
+    "artifacts/metrics_summary.json",
+    "artifacts/af_principles_state.json"
+  ],
+  "excluded_by_design": [
+    ".env and credentials",
+    "run histories and controller logs",
+    "2 GB patched phase-diagram/evaluator data",
+    "stale/intermediate result snapshots",
+    "course PDF pending redistribution permission",
+    "Python caches and temporary files"
+  ]
+}

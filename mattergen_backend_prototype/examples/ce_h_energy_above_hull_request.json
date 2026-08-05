@@ -1,0 +1,22 @@
+{
+  "backend": "mattergen",
+  "request_id": "ce_h_low_hull_v001",
+  "checkpoint": "chemical_system_energy_above_hull",
+  "target_count": 16,
+  "batch_size": 16,
+  "oversample_factor": 3.0,
+  "properties_to_condition_on": {
+    "chemical_system": "Ce-H",
+    "energy_above_hull": 0.0
+  },
+  "diffusion_guidance_factor": 2.0,
+  "filters": {
+    "chemical_system": "Ce-H",
+    "require_chemical_system_exact": false,
+    "forbidden_elements": ["Ra", "Am", "Cm", "Bk", "Cf", "Es", "Fm", "Md", "No", "Lr", "Rf"],
+    "exclude_reduced_formulas": ["CeH2"],
+    "max_sites": 20,
+    "min_sites": 1,
+    "deduplicate_reduced_formula": true
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MatterGenBackendRequest",
+  "type": "object",
+  "required": ["backend", "request_id", "checkpoint", "target_count"],
+  "properties": {
+    "backend": {
+      "const": "mattergen"
+    },
+    "request_id": {
+      "type": "string"
+    },
+    "checkpoint": {
+      "type": "string",
+      "description": "MatterGen pretrained checkpoint, e.g. mattergen_base, chemical_system, space_group, chemical_system_energy_above_hull."
+    },
+    "model_path": {
+      "type": "string",
+      "description": "Optional local checkpoint directory. When set, the adapter passes --model_path instead of --pretrained-name, avoiding Hugging Face Hub lookup."
+    },
+    "target_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "batch_size": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "num_batches": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "oversample_factor": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "properties_to_condition_on": {
+      "type": "object",
+      "description": "Passed to MatterGen --properties_to_condition_on. Typical keys: chemical_system, energy_above_hull, space_group, dft_band_gap, dft_mag_density, ml_bulk_modulus."
+    },
+    "diffusion_guidance_factor": {
+      "type": "number"
+    },
+    "filters": {
+      "type": "object",
+      "properties": {
+        "allowed_elements": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "forbidden_elements": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "chemical_system": {
+          "oneOf": [
+            {"type": "string"},
+            {"type": "array", "items": {"type": "string"}}
+          ]
+        },
+        "require_chemical_system_exact": {
+          "type": "boolean"
+        },
+        "target_reduced_formula": {
+          "type": "string"
+        },
+        "exclude_reduced_formulas": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "max_sites": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "min_sites": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "deduplicate_reduced_formula": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "extra_cli_args": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  },
+  "additionalProperties": false
+}

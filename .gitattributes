@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+input.json linguist-generated=true
+artifacts/final_materials.csv linguist-generated=true
+

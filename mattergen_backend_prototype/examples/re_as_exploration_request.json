@@ -1,0 +1,20 @@
+{
+  "backend": "mattergen",
+  "request_id": "re_as_escape_template_v001",
+  "checkpoint": "chemical_system_energy_above_hull",
+  "target_count": 32,
+  "batch_size": 16,
+  "oversample_factor": 4.0,
+  "properties_to_condition_on": {
+    "chemical_system": "Er-As",
+    "energy_above_hull": 0.0
+  },
+  "diffusion_guidance_factor": 1.5,
+  "filters": {
+    "chemical_system": "Er-As",
+    "require_chemical_system_exact": false,
+    "exclude_reduced_formulas": ["ErAs", "HoAs", "LuAs", "YAs", "TmAs"],
+    "max_sites": 20,
+    "deduplicate_reduced_formula": true
+  }
+}

@@ -1,0 +1,1848 @@
+{
+  "schema_version": "material_physics_mvp.v1",
+  "created_at_utc": "2026-05-20T00:49:47.492131+00:00",
+  "updated_at_utc": "2026-05-26T20:35:40.206878+00:00",
+  "status": "error",
+  "current_round": 427,
+  "best_round": 5,
+  "best_support_rate": 1.0,
+  "latest_support_rate": 1.0,
+  "principle_book": [
+    {
+      "program_id": "principle_program_001",
+      "status": "rejected_principle",
+      "closed_at_round": 7,
+      "principle_identity": "new_principle",
+      "updates_principle_id": null,
+      "topic_key": "Li-Mn-O-P::phosphate-Mn-network-buffering-rejected",
+      "principle_statement": "Broad Li-Mn-O-P stabilization cannot be explained as a non-formula-specific phosphate interruption of Mn-O-Mn networks that generally buffers Mn bond-valence or Jahn-Teller strain.",
+      "micro_mechanism": "PO4 or polyphosphate units can alter Mn-O connectivity and local bond valence, but the evaluated evidence shows this is not a general stabilizing lever across moderate-density Li-Mn oxophosphates. The effect is conditional on narrower structure, oxidation-state, and competing oxide-reference details not captured by the current descriptor.",
+      "reasoning_chain": [
+        "Rounds 1-3 narrowed the original broad phosphate-buffering idea because support was inconsistent outside Mn-specific subsets.",
+        "Round 5 supported a local moderate-density Li-Mn-O-P advantage over matched Li-Mn-O controls, with no SUNs.",
+        "Round 6 contradicted the LiMnPO4-topology refinement.",
+        "Round 7 contradicted the nonformula oxophosphate refinement, leaving no robust general causal scope."
+      ],
+      "evidence_rounds": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "boundaries": [
+        "Applies only as a rejected broad causal theme, not as rejection of every individual Li-Mn phosphate.",
+        "Does not rule out narrower oxidation-state, PO4/P2O7, or polymorph-specific stabilization.",
+        "Does not transfer to Fe, V, or other transition-metal phosphate chemistries.",
+        "Does not establish any SUN-generating mechanism."
+      ],
+      "residual_risks": [
+        "Round 5 may represent a real narrow structure family not isolated by the later descriptors.",
+        "Oxidation-state matching was not explicitly enforced.",
+        "Connectivity descriptors were inferred indirectly from formula filters.",
+        "Small evaluated bundle sizes may miss rare stabilizing subfamilies."
+      ]
+    },
+    {
+      "program_id": "principle_program_002",
+      "status": "validated_principle",
+      "closed_at_round": 13,
+      "principle_identity": "new_principle",
+      "updates_principle_id": null,
+      "topic_key": "Mg-Si-O-F::alkaline-earth-transfer-boundary",
+      "principle_statement": "Limited low-F incorporation can lower metastability tails in compact Mg-Si-O-F through Mg-specific bond-valence relief, but this mechanism does not transfer generally to compact Ca-Si-O-F where Ca-O coordination is already flexible and matched oxides remain lower in e_hull.",
+      "micro_mechanism": "Mg benefits from limited Mg-F coordination because F can soften local bond-valence mismatch while preserving the Si-O scaffold. Ca-O coordination is already larger and more flexible, so adding sparse F gives weaker bond-valence relief and may introduce packing or coordination penalties relative to compact Ca-Si-O oxides.",
+      "reasoning_chain": [
+        "Rounds 10 and 11 showed Mg-Si-O-F primaries lower mean e_hull than density-matched Mg-Si-O controls with no SUN outcomes.",
+        "Round 12 preserved the predicted sign under a tighter compact closed-shell comparison, though with a smaller margin.",
+        "Round 13 gave a large margin: primary mean e_hull 0.0524 versus control mean 0.7008, with support_rate 1.0 and primary best-case also lower.",
+        "Zero primary, control, and mechanism-validated SUN counts bound the principle to metastability reduction rather than stable-phase discovery.",
+        "Rounds 10-13 supported Mg-Si-O-F metastability lowering and repeated low-e_hull minima, motivating Mg-F bond-valence relief.",
+        "Rounds 14-15 contradicted the broad mean-stabilization version under stricter compact Mg-Si-O controls.",
+        "Round 16 supported the narrowed low-F O-rich tail claim, with primary mean 0.0557 eV/atom and minimum 0.0255 eV/atom below controls.",
+        "SUN accounting stayed zero throughout, so the mechanism is ranking/stability-tail enrichment rather than new stable phase discovery.",
+        "Prior Mg-Si-O-F rounds supported conditional low-e_hull tail enrichment without SUN formation.",
+        "Round 18 replaced Mg with Ca while holding compact silicate, density, size, and oxide-control constraints fixed.",
+        "Ca-Si-O-F showed higher mean e_hull than Ca-Si-O controls, supporting Mg-specific rather than generic alkaline-earth F relief.",
+        "Zero SUN counts mean the result refines metastability ranking only, not discovery of stable new phases."
+      ],
+      "evidence_rounds": [
+        10,
+        11,
+        12,
+        13,
+        "10-13",
+        "14",
+        "15",
+        "16",
+        18
+      ],
+      "boundaries": [
+        "Compact moderate-density Mg-Si-O-F versus Mg-Si-O only.",
+        "Requires preserved Si-O cohesion and limited Mg-F local coordination.",
+        "Excludes broad phosphate-network, transition-metal redox, and open-framework transfer claims.",
+        "No demonstrated stable or SUN phase generation.",
+        "Compact moderate-density Mg-Si-O-F versus Mg-Si-O oxides only.",
+        "Requires limited F and preserved silicate-like Si-O cohesion.",
+        "Control matching must account for compactness, nsites, formation-energy window, and polymorph oversampling.",
+        "No demonstrated SUN-generating capability.",
+        "Compact moderate-density silicate oxyfluorides only.",
+        "Mg-Si-O-F benefit requires limited F and preserved Si-O cohesion.",
+        "Ca-Si-O-F is a demonstrated non-transfer boundary under matched compact controls.",
+        "No stable or SUN phase generation is established."
+      ],
+      "residual_risks": [
+        "Local Mg-F coordination and Mg bond-valence relief remain descriptor-inferred rather than explicitly measured.",
+        "The result may depend on database sampling of low-formation-energy Mg-Si-O-F candidates.",
+        "F stoichiometry and topology thresholds are not yet quantified.",
+        "Near-hull metastability does not guarantee synthesizability.",
+        "Local Mg-F coordination and bond-valence relief are still inferred from descriptors.",
+        "The low-F primary set in round 16 is small.",
+        "Exact F/O and topology thresholds remain unresolved.",
+        "Database candidate availability may influence the apparent low-e_hull tail.",
+        "Ca boundary is based on a small five-versus-five evaluated comparison.",
+        "The lower primary minimum e_hull leaves a possible narrow Ca exception.",
+        "Coordination and bond-valence relief remain descriptor-inferred.",
+        "Round 17 was unresolved by materialization incompleteness rather than scientific falsification."
+      ],
+      "first_closed_at_round": 13,
+      "last_updated_round": 18,
+      "status_history": [
+        {
+          "round": 16,
+          "status": "validated_principle",
+          "program_id": "principle_program_003"
+        },
+        {
+          "round": 18,
+          "status": "validated_principle",
+          "program_id": "principle_program_003"
+        }
+      ],
+      "merged_program_ids": [
+        "principle_program_003"
+      ]
+    },
+    {
+      "program_id": "principle_program_003",
+      "status": "validated_principle",
+      "closed_at_round": 22,
+      "principle_identity": "new_principle",
+      "updates_principle_id": null,
+      "topic_key": "Li-V-P-O::compact-pyrophosphate-alkali-size-boundary",
+      "principle_statement": "Compact finite-gap Li-V-P-O lowers metastability tails when PO4/P2O7 buffering interrupts V-O-V redox connectivity while dense Li-size packing preserves V-O/Li-O cohesion; this topology-conditioned effect does not transfer strongly to Na-V-P-O and remains a near-hull tail-reduction principle, not a SUN-generation principle.",
+      "micro_mechanism": "Pyrophosphate/PO4 units interrupt excessive V-O-V redox connectivity and relieve V bond-valence strain while compact Li-O/V-O packing maintains oxide cohesion. Li is small enough to support dense local packing around the V-P-O scaffold; Na expands and softens this packing match, so pyrophosphate buffering no longer provides a clear low-e_hull advantage over compact V-richer Na-V-P-O controls.",
+      "reasoning_chain": [
+        "Round 19 contradicted the prior silicate-fluoride framing and forced separation from non-transfer analogies.",
+        "Rounds 20 and 21 supported Li-V-P-O below matched Li-V-O in mean and minimum e_hull.",
+        "Round 22 reproduced the same direction with primary mean 0.0293 eV/atom versus control mean 0.0393 eV/atom.",
+        "SUN accounting stayed zero, so the validated outcome is metastability-tail lowering only.",
+        "Rounds 19-22 established a narrow Li-V-P-O tail-lowering effect under compact finite-gap constraints.",
+        "Round 23 reproduced the effect with limited-phosphate primaries beating matched Li-V-O controls in mean e_hull.",
+        "Round 23 also showed a lower primary minimum e_hull, supporting the metastability-tail interpretation.",
+        "Zero primary, control, and mechanism-validated SUN counts restrict the claim to near-hull lowering.",
+        "Rounds 24 and 25 supported compact Li-V-P-O stabilization under controlled finite-gap density windows, but only as modest e_hull tail lowering.",
+        "Round 26 contradicted a simple low-P threshold, showing LiVP2O7 can outperform low-P compact controls.",
+        "Round 27 resolved the contradiction by identifying pyrophosphate/topology-conditioned buffering as the better descriptor than P:V alone.",
+        "Round 28 supported the alkali-size boundary: NaVP2O7 lost the Li-like advantage against compact V-richer Na-V-P-O controls, with no SUNs in either branch."
+      ],
+      "evidence_rounds": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        "24-28"
+      ],
+      "boundaries": [
+        "Compact finite-gap Li-V-P-O versus matched Li-V-O only.",
+        "Requires limited phosphate buffering and dense Li/V oxide cohesion.",
+        "No claim of stable phase, SUN discovery, or broad transition-metal phosphate transfer.",
+        "Silicate-fluoride and chloride results are excluded as separate causal themes.",
+        "Requires limited phosphate and dense Li/V-O cohesion.",
+        "Excludes phosphate-rich, open-framework, and broad transition-metal phosphate claims.",
+        "No demonstrated SUN or stable-phase generation.",
+        "Compact finite-gap Li-V-P-O and closely matched alkali-V-P-O transfer tests only.",
+        "Requires dense Li-compatible packing plus PO4/P2O7 interruption of V-O-V connectivity.",
+        "Na substitution weakens or removes the pyrophosphate advantage under matched compact windows.",
+        "No demonstrated stable phase or SUN generation."
+      ],
+      "residual_risks": [
+        "Local V oxidation states and PO4 connectivity were descriptor-inferred.",
+        "P:V and topology thresholds are not yet isolated.",
+        "Round 9 broader near-miss suggests the effect can disappear outside the compact controlled slice.",
+        "Known-prototype sampling may contribute to the observed near-hull tail.",
+        "Connectivity and oxidation-state mechanisms are descriptor-inferred.",
+        "P:V and topology thresholds remain unresolved.",
+        "Database sampling may favor known compact low-e_hull Li-V-P-O motifs.",
+        "Transfer to other redox cations is unvalidated.",
+        "Connectivity, local coordination, and V oxidation states were inferred from descriptors rather than directly measured.",
+        "Round-28 Na evidence has only two primaries and a small mean e_hull gap.",
+        "Other alkali substitutions or mixed Li/Na compositions may show intermediate behavior.",
+        "Database selection and polymorph coverage may affect near-hull tail comparisons."
+      ],
+      "first_closed_at_round": 22,
+      "last_updated_round": 28,
+      "status_history": [
+        {
+          "round": 23,
+          "status": "validated_principle",
+          "program_id": "principle_program_004"
+        },
+        {
+          "round": 28,
+          "status": "validated_principle",
+          "program_id": "principle_program_004"
+        }
+      ],
+      "merged_program_ids": [
+        "principle_program_004"
+      ]
+    },
+    {
+      "program_id": "principle_program_004",
+      "status": "validated_principle",
+      "closed_at_round": 36,
+      "principle_identity": "new_principle",
+      "updates_principle_id": null,
+      "topic_key": "Li-Na-K-P-S::PSx-covalency-dense-alkali-sulfide-cohesion",
+      "principle_statement": "Compact finite-gap Li/Na-P-S thiophosphates lower near-hull metastability tails relative to compact Li/Na sulfides when PSx covalency partitions sulfide charge and dense Li/Na-S coordination preserves Madelung cohesion. The round-86 update reinforces the Li/Na compact branch and should be absorbed into the existing PSx compactness-gated thiophosphate principle, with no SUN-generation claim.",
+      "micro_mechanism": "Directional P-S bonding forms PSx units that delocalize and partition sulfide charge, reducing anion-localized instability. Compact Li/Na-S coordination maintains short-range ionic packing and Madelung cohesion, so the covalent PSx stabilization is not offset by loose alkali-sulfide frameworks. Binary Li/Na sulfides retain alkali-S cohesion but lack the P-S charge-partitioning channel.",
+      "reasoning_chain": [
+        "Prior rounds established that compactness alone was insufficient and that PSx plus dense alkali-S cohesion best explained lower thiophosphate tails.",
+        "Round 66 strict Li and Na comparisons held alkali identity, sulfide chemistry, finite gap, and compactness while both primary branches beat binary controls.",
+        "SUN accounting separates mechanism success from discovery: two primary SUNs validate the PSx mechanism, while one control SUN defines a competing compact-sulfide boundary.",
+        "The causal claim should remain Li/Na compactness- and topology-conditioned rather than broadened to K-rich, loose, or generic alkali thiophosphates.",
+        "Prior rounds established compact thiophosphate tail lowering but required exclusion of open, K-rich, or poorly matched branches.",
+        "Round 67 Li-P-S beat Li2S with primary mean e_hull 0.01764 versus control 0.07264, supporting PSx stabilization in compact Li packing.",
+        "Round 67 sulfur-rich Na-P-S beat Na-S with primary mean e_hull -0.00403 versus control 0.02940 and produced one mechanism-validated primary SUN.",
+        "No control SUN occurred in round 67, so the latest SUN supports the primary mechanism rather than a control-derived sulfide lead.",
+        "Earlier rounds established repeated Li/Na-P-S near-hull advantages over matched sulfide controls.",
+        "Round 83 again supports the mean e_hull relation with primary mean below control mean across both bundles.",
+        "The mechanism-validated primary SUN supports real stabilizing capacity within the compact Li/Na-P-S window.",
+        "Control SUNs require narrowing the claim to metastability-tail reduction and treating sulfide or K-P-S SUNs as separate leads.",
+        "Earlier rounds established repeated low-e_hull support for alkali-P-S under compact finite-gap filtering.",
+        "Round 84 isolates clean Li/Na-P-S against binary Li/Na sulfides and keeps the primary mean far lower than control mean.",
+        "The matched small-alkali sulfide comparison supports PSx charge partitioning as the added stabilizing term.",
+        "Zero SUNs in both branches confines the claim to metastability-tail reduction.",
+        "Round 85 isolates compact O/H/K-free Li/Na-P-S against compact Li/Na sulfides lacking P-S covalency.",
+        "Primary mean e_hull is 0.0159 eV/atom versus 0.0761 eV/atom for controls, supporting the predicted tail reduction.",
+        "Primary minimum e_hull also beats control minimum, strengthening this specific binary-control comparison.",
+        "Zero primary, control, and mechanism-validated SUNs keep the conclusion limited to near-hull metastability lowering.",
+        "Primary compact Li/Na-P-S mean e_hull was 0.01764 versus 0.09294 for compact Li/Na sulfides.",
+        "Support rate was 1.0 for the tested primary-lower-than-control relation.",
+        "Zero primary, control, and mechanism-validated SUN counts restrict the claim to metastability-tail reduction.",
+        "The causal theme matches existing principle_program_004: PSx covalency plus dense alkali-sulfide cohesion."
+      ],
+      "evidence_rounds": [
+        29,
+        30,
+        31,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        "29-31",
+        "35-41",
+        42,
+        "35-43",
+        44,
+        45,
+        "35-45",
+        54,
+        65,
+        43,
+        66,
+        67,
+        83,
+        84,
+        85,
+        86
+      ],
+      "boundaries": [
+        "Finite-gap compact Li-P-S and selected Na-P-S versus same-alkali compact sulfide controls.",
+        "Requires PSx covalency plus preserved dense alkali-S cohesion.",
+        "SUN generation is possible but not exclusive or necessary.",
+        "K-rich, loose, open-framework, oxynitride, and chloride transfer claims remain outside scope.",
+        "Finite-gap compact Li-P-S and compact Na-P-S with preserved dense alkali-S packing.",
+        "Requires PSx covalency plus dense Li/Na-sulfide coordination; PSx alone is insufficient.",
+        "K-P-S, loose frameworks, and low-density thiophosphates remain outside the validated scope.",
+        "Distinct from oxide phosphate redox-buffering, silicate-fluoride bond-valence relief, and nitride cohesion mechanisms.",
+        "Finite-gap compact Li/Na-P-S cells with comparable size and element-count matching.",
+        "Requires PSx covalency plus dense Li/Na-S packing; loose or K-rich transfer remains limited.",
+        "Does not claim all thiophosphates beat all sulfides on minimum e_hull.",
+        "Does not establish exclusive SUN discovery.",
+        "Compact finite-gap Li/Na-rich thiophosphates with preserved dense alkali-S packing.",
+        "K transfer only when density or volume matching preserves alkali-sulfide cohesion.",
+        "Does not cover loose P-S frameworks, generic alkali sulfides, or unrelated chalcogenides.",
+        "Near-hull tail reduction only; SUN discovery is not established.",
+        "Compact finite-gap Li/Na-P-S and matched Li/Na sulfide controls.",
+        "Requires PSx covalency plus dense small-alkali-S coordination.",
+        "K-rich, loose, O/H-containing, or non-thiophosphate phases are outside this update.",
+        "No stable-phase or SUN-discovery claim.",
+        "Finite-gap compact ternary Li/Na-P-S versus compact Li/Na sulfide controls.",
+        "Requires PSx covalency and dense Li/Na-S packing together.",
+        "No direct round-86 evidence for loose Li/Na-P-S failure.",
+        "No SUN-generation or K-rich transfer claim from this round."
+      ],
+      "residual_risks": [
+        "Database sampling may overweight a few low-energy thiophosphate formulas.",
+        "Descriptor filters do not directly resolve PSx topology or local alkali coordination.",
+        "The strict Li branch remains sample-limited.",
+        "Na-S control SUNs may reveal a separate compact sulfide stabilization mechanism.",
+        "Stoichiometry and polymerization thresholds for PSx benefit are not quantified.",
+        "Local PSx connectivity and alkali coordination remain inferred from composition and compactness descriptors.",
+        "Li branch uses a singleton binary Li2S control, limiting population-level certainty.",
+        "K-P-S and loose Na-P-S falsification tests are still needed.",
+        "Small Na sulfur-rich sample may overstate SUN-transfer generality.",
+        "Local coordination and PSx motifs are inferred rather than directly classified.",
+        "Small K-P-S boundary pool limits alkali-size conclusions.",
+        "Control SUN chemistry may reveal a separate sulfide or K-P-S stabilization mechanism.",
+        "Composition ordering may still partly drive the observed compact Li/Na-P-S advantage.",
+        "PSx motifs and alkali coordination remain descriptor-inferred.",
+        "Li and Na have not been fully separated as independent causal axes.",
+        "Database sampling may favor known thiophosphate structure types.",
+        "Control-branch stable phases, when present in prior evidence, may reflect separate sulfide mechanisms.",
+        "PSx motifs and alkali coordination are inferred from descriptors rather than directly measured.",
+        "Formula diversity is modest after distinct-formula truncation.",
+        "Li-rich and Na-rich contributions are not yet disentangled.",
+        "Earlier control-minimum behavior means the principle is statistical, not absolute.",
+        "Local PSx motifs and alkali-S coordination are inferred from descriptors.",
+        "Loose Li/Na-P-S control pool was unavailable.",
+        "Primary/control counts are small, so prototype bias remains possible."
+      ],
+      "first_closed_at_round": 36,
+      "last_updated_round": 86,
+      "status_history": [
+        {
+          "round": 37,
+          "status": "validated_principle",
+          "program_id": "principle_program_005"
+        },
+        {
+          "round": 41,
+          "status": "validated_principle",
+          "program_id": "principle_program_005"
+        },
+        {
+          "round": 42,
+          "status": "validated_principle",
+          "program_id": "principle_program_005"
+        },
+        {
+          "round": 43,
+          "status": "validated_principle",
+          "program_id": "principle_program_005"
+        },
+        {
+          "round": 45,
+          "status": "validated_principle",
+          "program_id": "principle_program_005"
+        },
+        {
+          "round": 54,
+          "status": "validated_principle",
+          "program_id": "principle_program_006"
+        },
+        {
+          "round": 65,
+          "status": "validated_principle",
+          "program_id": "principle_program_007"
+        },
+        {
+          "round": 66,
+          "status": "validated_principle",
+          "program_id": "principle_program_007"
+        },
+        {
+          "round": 67,
+          "status": "validated_principle",
+          "program_id": "principle_program_007"
+        },
+        {
+          "round": 83,
+          "status": "validated_principle",
+          "program_id": "principle_program_009"
+        },
+        {
+          "round": 84,
+          "status": "validated_principle",
+          "program_id": "principle_program_009"
+        },
+        {
+          "round": 85,
+          "status": "validated_principle",
+          "program_id": "principle_program_009"
+        },
+        {
+          "round": 86,
+          "status": "validated_principle",
+          "program_id": "principle_program_009"
+        }
+      ],
+      "merged_program_ids": [
+        "principle_program_005",
+        "principle_program_006",
+        "principle_program_007",
+        "principle_program_009"
+      ]
+    },
+    {
+      "program_id": "principle_program_005",
+      "status": "validated_principle",
+      "closed_at_round": 53,
+      "principle_identity": "new_principle",
+      "updates_principle_id": null,
+      "topic_key": "Mg-Si-N::compact-MgN-cohesion-SiN-covalency-tail-reduction",
+      "principle_statement": "Compact finite-gap Mg-Si-N lowers metastability tails relative to matched compact Mg-Si-O when dense Mg-N coordination preserves ionic cohesion around covalent Si-N frameworks; the mechanism is compactness-gated and does not establish SUN generation.",
+      "micro_mechanism": "Si-N covalency can reduce framework strain relative to Mg-Si-O, but only when Mg-N coordination remains dense enough to maintain ionic cohesion. Loose packing or high volume per atom should weaken the effect because the covalent nitride framework no longer receives sufficient Mg-centered electrostatic stabilization.",
+      "reasoning_chain": [
+        "Rounds 50-52 repeatedly showed compact Mg-Si-N has lower mean e_hull than matched Mg-Si-O, with zero SUNs in both branches.",
+        "Round 53 strengthened the result under explicit compactness filters: primary mean e_hull 0.0950 versus control 0.3411 and lower primary minimum e_hull.",
+        "The consistent metastability advantage supports a Mg-N cohesion plus Si-N covalency mechanism rather than a generic Mg-Si chemistry effect.",
+        "Zero primary, control, and mechanism-validated SUNs bound the conclusion to near-hull tail reduction only."
+      ],
+      "evidence_rounds": [
+        50,
+        51,
+        52,
+        53
+      ],
+      "boundaries": [
+        "Finite-gap ternary Mg-Si-N versus Mg-Si-O in compact moderate-size cells.",
+        "Requires dense Mg-N packing and low volume per atom; loose Mg-Si-N remains unvalidated.",
+        "No stable-phase or SUN-generation claim is supported.",
+        "Distinct from Mg-Si-O-F Mg-F bond-valence relief and from PSx thiophosphate stabilization."
+      ],
+      "residual_risks": [
+        "Mg-N coordination and Si-N framework motifs were descriptor-inferred rather than explicitly measured.",
+        "Compactness gating still needs direct compact-versus-loose Mg-Si-N evaluation.",
+        "Small primary pool may bias the estimated tail advantage.",
+        "Round 46 belongs to a different PSx causal theme and should not be counted as Mg-Si-N evidence."
+      ]
+    },
+    {
+      "program_id": "principle_program_006",
+      "status": "rejected_principle",
+      "closed_at_round": 64,
+      "principle_identity": "new_principle",
+      "updates_principle_id": null,
+      "topic_key": "Li-Na-K-Cu-Zn-Cl::Cu-Cl-softness-over-Zn-rejected",
+      "principle_statement": "Compact finite-gap ternary alkali-Cu-Cl should not be treated as lower-e_hull than matched alkali-Zn-Cl merely because Cu-Cl softness can relieve mixed-cation chloride strain; the evaluated evidence rejects this Cu-specific chloride softness principle.",
+      "micro_mechanism": "Closed-shell Cu-Cl softness was proposed to relieve compact mixed-cation chloride strain, but the evaluated ternary Zn-Cl controls are much closer to the hull. Zn-Cl appears better accommodated in the sampled alkali chloride frameworks, likely because Zn-Cl coordination and lattice matching are more favorable than the Cu-substituted analogues generated for Li/Na systems.",
+      "reasoning_chain": [
+        "Round 61 gave only ambiguous support: Cu-Cl beat Zn-Cl in one narrow comparison but failed against binary chloride boundaries.",
+        "Round 64 directly retested ternary alkali-Cu-Cl versus alkali-Zn-Cl with compact finite-gap controls and found Cu-Cl much higher in e_hull.",
+        "SUN accounting is neutral: no primary, control, or mechanism-validated SUNs occurred, so the rejected mechanism has no discovery offset.",
+        "Earlier PSx evidence is a different P-S covalency and dense alkali-sulfide cohesion theme already represented by principle_program_004."
+      ],
+      "evidence_rounds": [
+        61,
+        64
+      ],
+      "boundaries": [
+        "Applies to compact finite-gap ternary Li/Na/K-Cu-Cl versus Li/Na/K-Zn-Cl comparisons.",
+        "Does not reject all Cu chloride stability, only the tested Cu-over-Zn softness causal claim.",
+        "Does not apply to thiophosphate, nitride, oxide-phosphate, or silicate-fluoride principles.",
+        "Zn-Cl near-hull behavior should be treated as a new lead, not validation of the Cu-Cl hypothesis."
+      ],
+      "residual_risks": [
+        "Cu-Cl pool size was small and partly generated by Zn-to-Cu substitution.",
+        "Alkali identity and structural prototype effects were not fully separated.",
+        "Local coordination environments were inferred from composition and compactness rather than explicitly measured.",
+        "A narrower K-Cu-Cl-only motif could still exist but would be a new, more specific hypothesis."
+      ]
+    },
+    {
+      "program_id": "principle_program_007",
+      "status": "validated_principle",
+      "closed_at_round": 73,
+      "principle_identity": "new_principle",
+      "updates_principle_id": null,
+      "topic_key": "Li-Na-K-Zn-Cl::A2ZnCl4-charge-balanced-formula-window",
+      "principle_statement": "Formula-fixed finite-gap Li/Na/K A2ZnCl4 chlorozincates lower near-hull metastability tails relative to matched alkali chlorides and off-stoichiometric alkali-Zn-Cl phases when charge-balanced ZnCl4 coordination adds local Zn-Cl cohesion while preserving alkali-Cl Madelung packing; this is a near-hull tail-reduction principle, not a SUN-generation principle.",
+      "micro_mechanism": "The A2:Zn:Cl4 stoichiometry is chemically special because Zn2+ can be locally satisfied by tetrahedral or related ZnCl4 coordination while two alkali cations maintain chloride charge balance and ionic packing. Off-window K-Zn-Cl compositions perturb this charge/packing compatibility, and Zn-free Li/Na chlorides lack the additional Zn-Cl cohesive contribution.",
+      "reasoning_chain": [
+        "Round 70 rejected broad Zn-over-Cu and generic K-Zn-Cl transfer, but Li2ZnCl4 and Na2ZnCl4 remained promising.",
+        "Round 71 showed Li/Na A2ZnCl4 support and contradicted simple K exclusion because K2ZnCl4 was near-hull.",
+        "Round 72 supported the narrowed Li/Na/K A2ZnCl4 versus same-alkali ACl formula-window claim.",
+        "Round 73 confirmed both Li/Na A2ZnCl4 versus ACl and K2ZnCl4 versus off-stoichiometric K-Zn-Cl controls, with zero SUNs.",
+        "Rounds 70-73 established that Zn-Cl chlorozincate behavior is distinct from rejected Cu-Cl softness and off-stoichiometric chloride controls.",
+        "Round 74 tested the stricter same-alkali ACl baseline and preserved the predicted lower e_hull tail.",
+        "Primary mean e_hull was 0.01549 versus 0.04108 for ACl controls, with support_rate 1.0.",
+        "No primary or control SUNs appeared, so the principle is a metastability-tail rule, not a discovery rule.",
+        "Rounds 70-74 established Zn-Cl chlorozincates as the viable chloride lead after Cu-Cl softness-over-Zn failed.",
+        "Round 75 K2ZnCl4 strongly outperformed off-window K-Zn-Cl controls, supporting the A2:Zn:Cl4 formula-window mechanism.",
+        "Round 75 Li/Na A2ZnCl4 also outperformed Zn-free Li/Na chlorides, supporting a ZnCl4 cohesive contribution beyond simple alkali chloride packing.",
+        "SUN accounting remained zero, so the mechanism is validated only for metastability-tail lowering."
+      ],
+      "evidence_rounds": [
+        70,
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "boundaries": [
+        "Applies to finite-gap Li/Na/K A2ZnCl4 chlorozincates.",
+        "Requires charge-balanced A2ZnCl4 stoichiometry rather than generic alkali-Zn-Cl composition.",
+        "Distinct from the rejected Cu-Cl softness-over-Zn principle in principle_program_006.",
+        "Near-hull tail reduction only; no stable-phase or SUN-generation claim.",
+        "Finite-gap Li/Na/K A2ZnCl4 chlorozincates only.",
+        "Requires charge-balanced A2ZnCl4 stoichiometry.",
+        "Excludes Cu-substituted and generic A-M-Cl transfer claims.",
+        "Near-hull tail reduction only; no SUN claim.",
+        "Finite-gap compact Li/Na/K A2ZnCl4 chlorozincates.",
+        "Requires charge-balanced ZnCl4-compatible stoichiometry rather than generic alkali-Zn-Cl mixing.",
+        "Distinct from rejected Cu-Cl softness-over-Zn behavior.",
+        "Does not claim stable or SUN phase discovery."
+      ],
+      "residual_risks": [
+        "Zn-Cl coordination and alkali packing preservation remain descriptor-inferred.",
+        "Small formula-fixed pools may overrepresent favorable known chlorozincate prototypes.",
+        "Off-stoichiometric controls are limited to a few K-Zn-Cl examples.",
+        "Branch-specific Li, Na, and K structural mechanisms may not be identical.",
+        "ZnCl4 coordination and alkali packing are descriptor-inferred.",
+        "Formula-fixed pools are small.",
+        "Alkali-specific effects are not fully decomposed.",
+        "Li/Na off-window Zn-Cl controls need stronger direct matching.",
+        "Small formula-specific datasets may bias the apparent robustness of the tail advantage."
+      ],
+      "first_closed_at_round": 73,
+      "last_updated_round": 75,
+      "status_history": [
+        {
+          "round": 74,
+          "status": "validated_principle",
+          "program_id": "principle_program_008"
+        },
+        {
+          "round": 75,
+          "status": "validated_principle",
+          "program_id": "principle_program_008"
+        }
+      ],
+      "merged_program_ids": [
+        "principle_program_008"
+      ]
+    },
+    {
+      "program_id": "principle_program_008",
+      "status": "validated_principle",
+      "closed_at_round": 82,
+      "principle_identity": "new_principle",
+      "updates_principle_id": null,
+      "topic_key": "Li-Na-B-H::BH4-covalency-dense-alkali-hydride-cohesion",
+      "principle_statement": "Compact finite-gap Li/Na-B-H borohydride-like phases lower metastability tails when BH4-like B-H covalency partitions hydride charge and dense Li/Na-H packing preserves Madalung cohesion; the effect is compactness-gated and does not establish SUN generation.",
+      "micro_mechanism": "B-H covalency localizes and partitions hydride-derived charge into BH4-like anions, reducing purely ionic hydride instability. Dense Li/Na coordination around those anions preserves electrostatic cohesion; loose cells weaken alkali-hydride Madelung stabilization and raise e_hull tails.",
+      "reasoning_chain": [
+        "Round 80 supported compact LiBH4 and NaBH4 branches over same-alkali hydride controls, indicating B-H covalency improves near-hull tails beyond simple alkali hydride cohesion.",
+        "Round 81 supported compact Li/Na-B-H over loose Li/Na-B-H, making dense packing a necessary gate rather than an incidental descriptor.",
+        "Round 82 repeated the compact-versus-loose test under fixed Li-B-H and Na-B-H chemistry; both bundles supported lower compact e_hull means.",
+        "SUN accounting stayed zero across the evaluated BH4 rounds, so the validated effect is tail reduction only."
+      ],
+      "evidence_rounds": [
+        80,
+        81,
+        82
+      ],
+      "boundaries": [
+        "Finite-gap ternary Li/Na-B-H candidates in compact to moderate-size cells.",
+        "Requires BH4-like B-H covalency and dense Li/Na-H packing.",
+        "Separate from PSx thiophosphate, Zn-Cl chlorozincate, and Mg-Si-N compactness principles.",
+        "No claim for K-B-H, loose borohydrides, binary hydrides, or SUN discovery."
+      ],
+      "residual_risks": [
+        "Small loose-control pools may exaggerate compactness margins.",
+        "Local BH4 motifs and alkali-H coordination were inferred from composition and volume descriptors.",
+        "Alkali-size dependence between Li and Na is not yet quantified.",
+        "Formula-fixed polymorph tests remain needed to separate density from prototype sampling."
+      ]
+    },
+    {
+      "program_id": "principle_program_009",
+      "status": "validated_principle",
+      "closed_at_round": 99,
+      "principle_identity": "new_principle",
+      "updates_principle_id": null,
+      "topic_key": "Mg-Ca-Si-O-F::alkaline-earth-fluoride-bond-valence-silicate-cohesion",
+      "principle_statement": "Compact finite-gap Mg/Ca-Si-O-F fluorosilicates lower near-hull metastability tails relative to matched compact Mg/Ca-Si-O oxides when alkaline-earth-F bond-valence relief cooperates with retained Si-O framework cohesion; the principle is compactness-gated and does not establish SUN generation.",
+      "micro_mechanism": "F substitution supplies short, high-valence alkaline-earth-F contacts that improve local Mg/Ca bond-valence satisfaction without replacing the cohesive Si-O network. Compact packing is needed so M-F relief and Si-O framework cohesion cooperate rather than producing loose mixed-anion frameworks. Ca transfer shows the mechanism survives larger alkaline-earth coordination, though it should remain bounded by compactness and anion-size compatibility.",
+      "reasoning_chain": [
+        "Rounds 90-92 repeatedly showed compact Mg-Si-O-F lower mean e_hull than matched compact Mg-Si-O controls.",
+        "Round 99 transferred the same oxide-relative advantage to compact Ca-Si-O-F, with primary mean e_hull 0.0734 versus control 0.2304 eV/atom.",
+        "SUN accounting is neutral across the fluorosilicate evidence, so the validated effect is metastability-tail reduction only.",
+        "Round 87 K-P-S control SUNs reflect a distinct PSx thiophosphate branch and define an exclusion boundary rather than supporting this fluorosilicate mechanism."
+      ],
+      "evidence_rounds": [
+        87,
+        90,
+        91,
+        92,
+        99
+      ],
+      "boundaries": [
+        "Finite-gap compact Mg/Ca-Si-O-F versus matched Mg/Ca-Si-O controls.",
+        "Requires retained Si-O framework cohesion plus alkaline-earth-F bond-valence relief.",
+        "No claim for chloride, loose cells, non-silicate fluorides, or stable/SUN discovery.",
+        "K-P-S and Li/Na-P-S thiophosphate evidence is separate chemistry."
+      ],
+      "residual_risks": [
+        "Local coordination motifs are inferred from composition and compactness descriptors.",
+        "Small Ca-Si-O-F primary pool may bias the transfer magnitude.",
+        "Chloride specificity and loose-cell failure remain untested.",
+        "Mg versus Ca alkaline-earth size trend is not yet quantitatively isolated."
+      ]
+    },
+    {
+      "program_id": "principle_program_010",
+      "status": "validated_principle",
+      "closed_at_round": 105,
+      "principle_identity": "new_principle",
+      "updates_principle_id": null,
+      "topic_key": "Mg-Al-O::MgAl2O4-spinel-bond-valence-rare-minimum",
+      "principle_statement": "Compact finite-gap MgAl2O4 near the 1:2:4 stoichiometric window can produce rare lower e_hull minima than tightly matched off-stoichiometric Mg-Al-O controls because Mg2+/Al3+ bond-valence satisfaction is especially compatible with compact spinel-like oxygen sublattices; this is not a broad mean-tail or SUN-generation principle.",
+      "micro_mechanism": "Mg2+/Al3+ charge balance and bond-valence satisfaction are unusually compatible with compact spinel-like oxygen sublattices at Mg:Al:O = 1:2:4. Off-stoichiometric Mg-Al-O controls can remain competitive when local coordination is favorable, but they more often disrupt the cation-site valence balance needed for the lowest near-hull minima.",
+      "reasoning_chain": [
+        "Round 100 rejected the broad MgAl2O4-window mean-tail claim because compact off-window controls had lower mean e_hull.",
+        "Round 101 restored support only after narrowing to tightly matched compact MgAl2O4 minima.",
+        "Round 102 again rejected mean-tail generalization while preserving a primary minimum advantage.",
+        "Rounds 103-105 consistently supported the rare-minimum spinel-window claim, with round 105 showing both lower primary mean and lower primary minimum."
+      ],
+      "evidence_rounds": [
+        100,
+        101,
+        102,
+        103,
+        104,
+        105
+      ],
+      "boundaries": [
+        "Finite-gap compact Mg-Al-O candidates near MgAl2O4 stoichiometry.",
+        "Claims only rare near-hull minima, not generic formula advantage.",
+        "Off-stoichiometric Mg-Al-O remains competitive when local coordination is favorable.",
+        "No stable-phase, SUN-discovery, or non-Mg-Al-O transfer claim."
+      ],
+      "residual_risks": [
+        "Small off-window control pools may exaggerate the observed separation.",
+        "Structural motifs and cation ordering were descriptor-inferred rather than directly measured.",
+        "The mechanism may depend on sampled spinel prototypes rather than composition alone.",
+        "Transfer to Ca-Al-O or other aluminate families is unresolved."
+      ]
+    },
+    {
+      "program_id": "principle_program_011",
+      "status": "rejected_principle",
+      "closed_at_round": 110,
+      "principle_identity": "new_principle",
+      "updates_principle_id": null,
+      "topic_key": "Fe-Mn-O::mixed-valence-bond-valence-buffering-rejected",
+      "principle_statement": "Compact finite-gap Fe-Mn-O oxides should not be treated as lower-e_hull than matched compact Fe-O or Mn-O binaries solely because mixed Fe/Mn valence can buffer oxygen-framework bond-valence mismatch.",
+      "micro_mechanism": "The proposed Fe/Mn multivalence bond-valence buffering is not sufficient to overcome the strong endpoint stability of compact finite-gap Fe-O and Mn-O oxide frameworks in the sampled composition windows.",
+      "reasoning_chain": [
+        "Mn-rich Fe-Mn-O lost to compact Mn-O in both mean e_hull and minimum e_hull.",
+        "Fe-rich Fe-Mn-O lost to compact Fe-O in mean e_hull, with nearly tied minima.",
+        "Support rate was 0.0 across both endpoint-controlled bundles.",
+        "No primary or control SUNs occurred, so the rejection concerns metastability-tail ranking rather than SUN accounting."
+      ],
+      "evidence_rounds": [
+        110
+      ],
+      "boundaries": [
+        "Compact finite-gap Fe-Mn-O versus matched compact Fe-O and Mn-O controls.",
+        "Moderate-size cells within density and volume-per-atom filters used in round 110.",
+        "Does not reject prototype-specific Fe-Mn oxide stability outside the tested descriptor window.",
+        "Distinct from Mg-Al-O spinel bond-valence and fluorosilicate bond-valence-relief principles."
+      ],
+      "residual_risks": [
+        "Small Fe-Mn-O primary pools may miss favorable ordered prototypes.",
+        "Oxidation-state and coordination mechanisms were descriptor-inferred.",
+        "Binary Fe-O and Mn-O controls may contain especially favorable known oxide prototypes."
+      ]
+    },
+    {
+      "program_id": "principle_program_012",
+      "status": "validated_principle",
+      "closed_at_round": 115,
+      "principle_identity": "new_principle",
+      "updates_principle_id": null,
+      "topic_key": "Na-P-O::PO4-charge-partitioning-oxide-transfer-rejected",
+      "principle_statement": "The validated Na/K-P-S charge-partitioning principle does not transfer to compact Na-P-O phosphates versus Na-O oxides: PO4 covalency alone is insufficient to lower mean metastability relative to compact sodium oxide endpoints in the evaluated windows.",
+      "micro_mechanism": "P-O covalency strongly stabilizes phosphate units, but in the tested compact Na-P-O windows it does not outperform simple Na-O endpoint motifs. The oxide controls already satisfy Na-O electrostatics and packing at much lower mean e_hull, while phosphate stoichiometry/prototype constraints create a high-metastability tail despite isolated near-hull primary examples.",
+      "reasoning_chain": [
+        "Round 205 exact-element matching removed O/H/N/F and extra-cation confounds while preserving compact finite-gap Na/K-S chemistry.",
+        "Primary Na/K-P-S mean e_hull was 0.00113 versus 0.03037 for Na/K-S controls, supporting PSx-driven tail reduction.",
+        "Primary SUN count was 3, but control SUN count was 2, so SUN discovery must be accounted separately from mechanism validation.",
+        "The slightly lower control minimum confines the principle to mean and near-hull-tail behavior, not absolute best-candidate dominance.",
+        "Round 207 matched compact finite-gap Na/K-P-S against compact Na/K-S endpoints under shared chemistry, density, size, and finite-gap filters.",
+        "Primary mean e_hull was lower than control by about 0.0355 eV/atom, supporting the predicted mean-tail reduction.",
+        "Primary SUN count exceeded control SUN count, with three mechanism-validating SUNs assigned to the PSx branch.",
+        "The single control SUN confirms endpoint Na/K-S stability as a boundary and lead, not as evidence against PSx charge-partition stabilization.",
+        "Round 214 primary near-PSx Na/K-P-S mean e_hull was 0.00113 versus 0.01439 for matched compact Na/K-S controls.",
+        "The supported A/B relation had support_rate 1.0 with a mean e_hull advantage of about 0.01327 eV/atom for the ternary branch.",
+        "Primary SUN count was 3, validating the predicted branch, while 2 control SUNs indicate independent binary sulfide endpoint stability.",
+        "This is the same material family and microscopic driver as principle_program_012, so the new result strengthens and sharpens that existing validated principle.",
+        "Prior rounds established recurring Na/K-P-S mean-tail reduction under compact finite-gap PSx-like filters.",
+        "Round 215 exact Na-P-S versus Na-S directly supports the mechanism with primary mean e_hull -0.00031 versus control mean 0.02111 eV/atom.",
+        "Primary SUN count of 2 shows the PSx compact mechanism can produce stable/near-stable candidates.",
+        "Control SUN count of 2 limits the claim to mean-tail reduction and identifies binary Na-S endpoint chemistry as a separate lead.",
+        "Prior Na/K-P-S rounds repeatedly supported lower near-hull tails under compact finite-gap filters.",
+        "Round 217 exact compact retest again favored Na/K-P-S over matched Na/K-S in mean e_hull.",
+        "Primary SUN count exceeded control SUN count, validating PSx-bearing enrichment while preserving control endpoint leads.",
+        "Recurring Na/K-S SUNs narrow the claim away from exclusive stability and toward compactness-gated mean-tail reduction.",
+        "Round 350 tested Na3PO4 against Na2O and NaPO3/NaPO6 against Na redox oxide controls.",
+        "Both bundles contradicted the prediction, with primary means near 0.36-0.38 eV/atom versus controls near 0.07-0.08 eV/atom.",
+        "SUN accounting was neutral: no primary, control, or mechanism-validated SUNs were found.",
+        "The result is best recorded as an oxygen-anion transfer boundary to the P-S thiophosphate covalency principle, not as a new validated phosphate mechanism."
+      ],
+      "evidence_rounds": [
+        111,
+        112,
+        114,
+        115,
+        116,
+        117,
+        119,
+        122,
+        126,
+        127,
+        128,
+        129,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        147,
+        156,
+        157,
+        196,
+        202,
+        203,
+        "111-137",
+        "156-157",
+        "196,202-204",
+        205,
+        207,
+        214,
+        215,
+        "196,202-205,207,214-215",
+        217,
+        350
+      ],
+      "boundaries": [
+        "No transfer claim to Li, oxysulfides, halides, loose cells, or generic polyanions.",
+        "Compact finite-gap exact or near-PSx Na/K-P-S versus matched compact Na/K-S sulfides.",
+        "Validated for mean and near-hull-tail reduction, not exclusive SUN ownership or best-minimum dominance.",
+        "Requires dense Na/K-sulfide coordination and plausible PSx-like charge partitioning.",
+        "Control Na/K-S SUNs remain independent endpoint leads.",
+        "Compact finite-gap Na/K-P-S versus matched compact Na/K-S endpoint sulfides.",
+        "Mean near-hull tail reduction only, not universal SUN or best-minimum prediction.",
+        "Excludes loose cells and off-window P:S compositions.",
+        "Control Na/K-S SUNs remain separate endpoint mechanisms.",
+        "Compact finite-gap Na/K-P-S near PSx stoichiometry versus compact Na/K-S controls.",
+        "Binary Na/K-S SUNs are control-derived leads, not PSx mechanism successes.",
+        "No transfer claimed to Li, oxysulfides, halothiophosphates, chlorides, loose cells, or metallic systems.",
+        "Best-minimum superiority is not required; the validated signal is mean-tail reduction and primary SUN enrichment.",
+        "Stable-phase exclusivity is excluded because compact Na/K-S controls can also produce SUNs.",
+        "K-specific exact-chemistry transfer remains less certain because the latest exact K-P-S pool underfilled.",
+        "Descriptor filters do not prove local PSx coordination without structural motif checks.",
+        "Compact finite-gap Na/K-P-S versus matched compact Na/K-S only.",
+        "Control Na/K-S SUNs are a separate endpoint mechanism lead.",
+        "Loose cells, oxysulfides, halothiophosphates, Li systems, and non-Na/K cations remain outside validated scope.",
+        "Validated for mean-tail reduction and near-hull enrichment, not universal stable-phase dominance.",
+        "Applies to compact finite-gap small-cell Na-P-O versus Na-O controls.",
+        "Rejects broad PO4 charge-partitioning transfer, not every prototype-specific alkali phosphate.",
+        "Does not weaken the Na/K-P-S principle, where P-S covalency and sulfide packing are distinct.",
+        "No SUN discovery claim is supported."
+      ],
+      "residual_risks": [
+        "The compact Na/K-S endpoint mechanism is still unresolved.",
+        "Best-minimum behavior can favor controls even when the primary mean is lower.",
+        "Local PSx coordination and bond-valence relief remain descriptor-inferred.",
+        "Exact-element sample sizes are small and may encode prototype bias.",
+        "The compactness gate still needs a direct dense-versus-loose Na/K-P-S falsification.",
+        "Off-PSx Na/K-P-S stoichiometry limits are not fully mapped.",
+        "Small candidate pools may encode prototype-selection bias.",
+        "Na-rich and K-rich branches may not share identical stabilization.",
+        "Endpoint Na/K-S stability can compete in SUN discovery even when the mean-tail mechanism holds.",
+        "Direct off-PSx Na/K-P-S contrast remains under-tested because executable pools overlapped.",
+        "Local PSx coordination and Na/K-sulfide packing are descriptor-inferred rather than directly verified.",
+        "Small primary pool may encode prototype-selection bias.",
+        "Binary sulfide SUN mechanism remains unresolved as a separate lead.",
+        "Small exact Na-P-S primary pool may encode prototype-selection bias.",
+        "K branch may have a different compactness or cation-size threshold.",
+        "Binary sulfide endpoint SUN mechanism is unresolved and could dominate some discovery workflows.",
+        "Coordination and bond-valence relief remain inferred from composition and compactness descriptors.",
+        "PSx coordination and bond-valence relief remain descriptor-inferred.",
+        "Loose-cell behavior has not yet been directly falsified.",
+        "Small exact-formula pools may retain prototype-selection bias.",
+        "Li-P-O remains under-tested in this specific rejected phosphate program.",
+        "Small primary formula pools may overweight prototype availability.",
+        "Direct local bond-valence and coordination analysis was not performed.",
+        "Near-hull primary minima could support a narrower prototype-specific search."
+      ],
+      "first_closed_at_round": 115,
+      "last_updated_round": 350,
+      "status_history": [
+        {
+          "round": 126,
+          "status": "validated_principle",
+          "program_id": "principle_program_013"
+        },
+        {
+          "round": 127,
+          "status": "validated_principle",
+          "program_id": "principle_program_013"
+        },
+        {
+          "round": 133,
+          "status": "validated_principle",
+          "program_id": "principle_program_013"
+        },
+        {
+          "round": 134,
+          "status": "rejected_principle",
+          "program_id": "principle_program_013"
+        },
+        {
+          "round": 135,
+          "status": "validated_principle",
+          "program_id": "principle_program_013"
+        },
+        {
+          "round": 136,
+          "status": "validated_principle",
+          "program_id": "principle_program_013"
+        },
+        {
+          "round": 137,
+          "status": "validated_principle",
+          "program_id": "principle_program_013"
+        },
+        {
+          "round": 147,
+          "status": "validated_principle",
+          "program_id": "principle_program_014"
+        },
+        {
+          "round": 156,
+          "status": "validated_principle",
+          "program_id": "principle_program_015"
+        },
+        {
+          "round": 157,
+          "status": "validated_principle",
+          "program_id": "principle_program_015"
+        },
+        {
+          "round": 196,
+          "status": "validated_principle",
+          "program_id": "principle_program_016"
+        },
+        {
+          "round": 202,
+          "status": "validated_principle",
+          "program_id": "principle_program_017"
+        },
+        {
+          "round": 203,
+          "status": "validated_principle",
+          "program_id": "principle_program_017"
+        },
+        {
+          "round": 204,
+          "status": "validated_principle",
+          "program_id": "principle_program_017"
+        },
+        {
+          "round": 205,
+          "status": "validated_principle",
+          "program_id": "principle_program_017"
+        },
+        {
+          "round": 207,
+          "status": "validated_principle",
+          "program_id": "principle_program_017"
+        },
+        {
+          "round": 214,
+          "status": "validated_principle",
+          "program_id": "principle_program_017"
+        },
+        {
+          "round": 215,
+          "status": "validated_principle",
+          "program_id": "principle_program_017"
+        },
+        {
+          "round": 217,
+          "status": "validated_principle",
+          "program_id": "principle_program_017"
+        },
+        {
+          "round": 350,
+          "status": "rejected_principle",
+          "program_id": "principle_program_017"
+        }
+      ],
+      "merged_program_ids": [
+        "principle_program_013",
+        "principle_program_014",
+        "principle_program_015",
+        "principle_program_016",
+        "principle_program_017"
+      ],
+      "latest_update_status": "rejected_principle"
+    },
+    {
+      "program_id": "principle_program_013",
+      "status": "validated_principle",
+      "closed_at_round": 146,
+      "principle_identity": "new_principle",
+      "updates_principle_id": null,
+      "topic_key": "Mg-Si-N::Mg-boundary-to-CaSiN2-SiN-covalency-transfer",
+      "principle_statement": "Mg-Si-N is a rejected transfer of the Ca-Si-N Si-N-covalency/bond-valence stabilization principle: compact finite-gap Mg-Si-N does not show reliable Mg:Si-windowed oxide-mismatch relief versus matched Mg-Si-O and Mg-N controls, and should be retained as a Mg-specific boundary to Ca-Si-N rather than a standalone validated mechanism.",
+      "micro_mechanism": "Si-N covalency can partition nitride charge, but Mg2+ is small and coordination-demanding; in compact Mg-Si-N it tends to impose stoichiometric and network constraints rather than universally relieving Mg-silicate bond-valence mismatch. Stable oxide and Mg-N endpoint motifs can satisfy Mg bond valence more efficiently than the mixed Mg-Si-N network.",
+      "reasoning_chain": [
+        "Round 140 made broad Mg/Ca-Si-N transfer ambiguous: Ca-Si-N improved over Ca-N while Mg-Si-N underperformed Mg-N.",
+        "Round 141 supported compact Ca-Si-N over matched compact Ca3N2 controls on mean and minimum e_hull.",
+        "Round 142 supported the CaSiN2-window over off-window Ca-Si-N and Ca-N controls by about 0.02 eV/atom.",
+        "Round 146 contradicted compactness gating but supported Mg-Si-N as a transfer boundary, narrowing the mechanism to Ca-specific Si-N/Ca-N compatibility.",
+        "Round 320 showed Mg-Si-N can beat one mismatched Mg-Si-O branch, creating a control-derived lead rather than validating the prior Ca-to-Mg transfer.",
+        "Rounds 321-322 narrowed the claim because Mg3N2 and MgSiO3-like controls exposed strong endpoint and stoichiometry boundaries.",
+        "Round 323 falsified the refined gate: Mg-rich Mg-Si-N lost to Mg2SiO4, while Si-rich Mg-Si-N beat MgSiO3 instead of marking the predicted overconstraint boundary.",
+        "SUN accounting was zero throughout this latest test, so the mechanism has no stable-phase discovery support."
+      ],
+      "evidence_rounds": [
+        140,
+        141,
+        142,
+        146,
+        320,
+        321,
+        322,
+        323
+      ],
+      "boundaries": [
+        "Finite-gap Ca-Si-N near CaSiN2-like Si:N coordination.",
+        "Ca-specific mechanism; Mg-Si-N is a boundary under matched compact filters.",
+        "Near-hull e_hull reduction only, not stable-phase or SUN discovery.",
+        "Compactness alone is not validated as the causal gate.",
+        "Update principle_program_013 by strengthening Mg-Si-N as a transfer boundary.",
+        "Applies to compact finite-gap small-cell Mg-Si-N under matched oxide and nitride controls.",
+        "Comparator choice is causal: Mg2SiO4, MgSiO3, and Mg3N2 cannot be pooled.",
+        "Near-hull trends only; no stable Mg-Si-N SUN mechanism was validated."
+      ],
+      "residual_risks": [
+        "Local coordination and prototype identity are descriptor-inferred.",
+        "Small executable pools, especially relaxed Ca-Si-N controls, may distort means.",
+        "Best-minimum behavior and mean-tail behavior are not fully reconciled.",
+        "The exact CaSiN2 stoichiometric window may need prototype-level refinement.",
+        "Small executable pools may encode prototype bias.",
+        "Descriptor-only inference may miss local coordination motifs.",
+        "A narrow experimentally known Mg-Si-N prototype family could still be viable outside these filters.",
+        "Round 320's oxide-branch advantage remains a comparator-specific anomaly rather than an explained mechanism."
+      ],
+      "first_closed_at_round": 146,
+      "last_updated_round": 323,
+      "status_history": [
+        {
+          "round": 323,
+          "status": "rejected_principle",
+          "program_id": "principle_program_017"
+        }
+      ],
+      "latest_update_status": "rejected_principle",
+      "merged_program_ids": [
+        "principle_program_017"
+      ]
+    },
+    {
+      "program_id": "principle_program_014",
+      "status": "validated_principle",
+      "closed_at_round": 155,
+      "principle_identity": "new_principle",
+      "updates_principle_id": null,
+      "topic_key": "Mg-Ca-Ba-B-O-F::alkaline-earth-size-gated-borate-oxyfluoride-stabilization",
+      "principle_statement": "Compact finite-gap Mg/Ca-B-O-F oxyfluorides can reduce near-hull metastability relative to matched Mg/Ca-B-O controls when retained B-O framework cohesion cooperates with limited F bond-valence relief, but the effect is alkaline-earth-size-gated and fails for Ba-B-O-F.",
+      "micro_mechanism": "B-O bonding supplies the cohesive borate framework, while modest F incorporation can relieve local cation or boron bond-valence mismatch in compact Mg/Ca environments. Ba is too large and weakly polarizing: Ba-F coordination expands the framework, reduces effective B-O connectivity, and leaves dense Ba-B-O oxide controls more stable.",
+      "reasoning_chain": [
+        "Rounds 150-152 consistently showed lower mean e_hull for compact Li/Na-B-O-F primaries than Li/Na-B-O controls, with primary-branch SUNs.",
+        "Round 153 preserved the Li/Na oxyfluoride advantage but made K transfer ambiguous, separating the core mechanism from alkali-size generalization.",
+        "Round 155 used stricter modifier-free compact filters and again found a large mean-e_hull advantage, primary_mean 0.00676 versus control_mean 0.06218.",
+        "The SUN accounting supports the mechanism in this round, but the evidence is insufficient to claim general stable-phase discovery beyond the tested branch.",
+        "Round 158 supported Mg/Ca-B-O-F lowering e_hull versus matched oxide borate controls without SUN generation.",
+        "The proposed transferable driver was B-O framework retention plus F-mediated bond-valence relief in compact divalent-cation environments.",
+        "Round 188 contradicted Ba transfer: primary mean e_hull was 0.02646 versus 0.00589 for Ba-B-O controls, with support_rate 0.0.",
+        "Four Ba-B-O control SUNs indicate a separate Ba oxide stability lead, not validation of the oxyfluoride mechanism."
+      ],
+      "evidence_rounds": [
+        150,
+        151,
+        152,
+        153,
+        155,
+        158,
+        188
+      ],
+      "boundaries": [
+        "Finite-gap compact Li/Na-B-O-F versus matched compact Li/Na-B-O only.",
+        "Requires retained B-O cohesion plus B-F relief; loose or F-diluted oxyfluorides are outside scope.",
+        "K-B-O-F is a boundary condition, not a validated transfer.",
+        "Distinct from Mg/Ca fluorosilicate F-relief and Li/Na borohydride mechanisms because the material family and anion framework are different.",
+        "Validated only as Mg/Ca-B-O-F near-hull reduction, not Ba transfer.",
+        "Requires compact retained B-O framework; loose or F-diluted structures are out of scope.",
+        "Does not establish stable/SUN discovery.",
+        "Ba-B-O control stability should be treated as a separate mechanism lead."
+      ],
+      "residual_risks": [
+        "Small primary pools may encode prototype bias.",
+        "Coordination motifs are descriptor-inferred rather than directly measured.",
+        "K packing strain remains unresolved as a quantitative boundary.",
+        "F substitution and compact Li/Na packing contributions are not yet independently isolated.",
+        "Mg/Ca evidence may be small-pool or prototype-biased.",
+        "Structural coordination motifs are inferred rather than directly validated.",
+        "Sr or mixed Mg/Ca/Ba tests are needed to locate the cation-size cutoff."
+      ],
+      "first_closed_at_round": 155,
+      "last_updated_round": 188,
+      "status_history": [
+        {
+          "round": 188,
+          "status": "validated_principle",
+          "program_id": "principle_program_015"
+        }
+      ],
+      "merged_program_ids": [
+        "principle_program_015"
+      ]
+    },
+    {
+      "program_id": "principle_program_015",
+      "status": "validated_principle",
+      "closed_at_round": 195,
+      "principle_identity": "new_principle",
+      "updates_principle_id": null,
+      "topic_key": "Li-Na-K-Rb-Cs-Zn-Cd-Cl-Br::fixed-Rb-Cd-Br-over-Cl-anion-softness",
+      "principle_statement": "The validated Rb-Cd-Br component of size-gated group-12 halometallate stabilization should be narrowed to a fixed-Rb, fixed-Cd Br-over-Cl anion-softness effect: compact finite-gap Rb-Cd-Br lowers mean e_hull relative to matched Rb-Cd-Cl because Br polarizability softens Cd-halide cages and relaxes Rb cavity strain, but this does not establish superiority over Zn substitution or Cs-Cd-Br frameworks.",
+      "micro_mechanism": "Br polarizability and larger anion radius soften Cd-halide coordination cages and reduce Rb cavity strain relative to smaller, stiffer Cl analogues, lowering mean metastability when Rb, Cd, stoichiometry class, compactness, and finite-gap filters are held fixed.",
+      "reasoning_chain": [
+        "Prior rounds validated Rb-Cd-Br enrichment and Li/Na/K-Cd-Cl mean-e_hull advantages under compact finite-gap filters.",
+        "Round 413 exact Li/Na A2CdCl4 beats exact A2ZnCl4 in mean and minimum e_hull.",
+        "Round 413 nearest K-Cd-Cl also beats K-Zn-Cl, but only weakly and without SUNs.",
+        "Rb4CdBr6 beats RbCdBr3 and supplies a control SUN, narrowing the Rb-Cd-Br topology claim.",
+        "Rb-Cd-Br beat matched Rb-Zn-Br in mean and minimum e_hull and supplied both mechanism-validated primary SUNs.",
+        "Li-Cd-Cl and Na-Cd-Cl each beat matched Zn-Cl controls, but only by small mean-e_hull margins and without SUN discovery.",
+        "K-Cd-Cl failed the Cd-over-Zn prediction because K-Zn-Cl had lower e_hull, narrowing the alkali chloride transfer.",
+        "The Rb-Zn-Br control SUN should be logged as a boundary or separate control-derived packing lead, not counted as Cd-mechanism validation.",
+        "Round 416 one-axis controls preserve the same compact finite-gap ternary filters while changing Br/Cl or Cd/Zn.",
+        "Rb-Cd-Br has lower mean e_hull than the matched control set and satisfies the predicted relation with support_rate 1.0.",
+        "Primary SUN count equals mechanism-validated SUN count, supporting the Rb-Cd-Br causal core.",
+        "Control SUNs show nearby halometallate opportunity space but do not overturn the narrower Rb-Cd-Br cavity-match mechanism.",
+        "Round 417 directly tested one-axis substitutions from Rb-Cd-Br while preserving compact finite-gap ternary group-12 halide scope.",
+        "Primary Rb-Cd-Br mean e_hull was lower than pooled Rb-Cd-Cl/Rb-Zn-Br controls by 0.0232 eV/atom.",
+        "Both primary SUNs validate the proposed Rb-size/Cd-Br softness-compliance mechanism.",
+        "Two control SUNs show adjacent mechanisms may exist, but they do not overturn the higher control mean e_hull or validate generic group-12 halide stability.",
+        "Round 423 directly tested the residual Rb-Cd-Br branch of the existing group-12 halometallate principle.",
+        "Rb-Cd-Br primary mean e_hull was lower than the combined Rb-Cd-Cl/Rb-Zn-Br control mean.",
+        "Both primary Rb-Cd-Br candidates were SUNs, supporting primary enrichment.",
+        "Control SUNs remain boundary leads and should not be counted as validation of the Rb-Cd-Br cavity mechanism.",
+        "Prior Rb-Cd-Br evidence supported low e_hull and SUN enrichment against Rb-Cd-Cl in broader comparisons.",
+        "Round 424 showed the broader optimum failed across Zn and Cs axes, forcing the principle to fixed-anion substitution.",
+        "Round 426 directly matched Rb,Cd and shared Br/Cl stoichiometries; Br mean e_hull was 0.864 versus Cl 2.242 with support_rate 1.0.",
+        "No SUNs appeared in either branch in round 426, so the validated claim is mean-metastability reduction, not SUN discovery."
+      ],
+      "evidence_rounds": [
+        190,
+        192,
+        193,
+        195,
+        210,
+        211,
+        213,
+        218,
+        307,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        324,
+        326,
+        327,
+        351,
+        354,
+        356,
+        370,
+        376,
+        378,
+        398,
+        399,
+        401,
+        402,
+        403,
+        405,
+        406,
+        411,
+        413,
+        414,
+        416,
+        417,
+        423,
+        424,
+        426
+      ],
+      "boundaries": [
+        "Validated mainly for compact finite-gap group-12 halometallates under matched small-cell filters.",
+        "Cd-Cl branch supports mean metastability reduction, not broad stable-compound generation.",
+        "Rb-Cd-Br SUN behavior is stoichiometry-specific; Rb4CdBr6 is a lead and RbCdBr3 is not uniquely validated.",
+        "Cd-Br, Cd-Cl, Zn-Cl, and alkali-size branches must remain separated unless stoichiometry and halide identity are controlled.",
+        "Compact finite-gap ternary alkali group-12 chlorides/bromides under matched alkali and halide filters.",
+        "Strong stability/SUN claim applies only to the Rb-Cd-Br soft-halide branch.",
+        "Li/Na chloride branches are mean-e_hull effects only until larger matched pools validate discovery enrichment.",
+        "K-Cd-Cl is excluded from the stabilizing Cd-over-Zn chloride scope.",
+        "Validated core is compact finite-gap small-cell ternary Rb-Cd-Br.",
+        "Cd-Cl and Zn-Br branches are controls or weaker transfer tests, not generic successes.",
+        "K-Cd-Cl remains a failure boundary where Zn-Cl can compete or win.",
+        "SUN discovery in controls must be tracked separately from mechanism validation.",
+        "Compact finite-gap ternary Rb-Cd-Br versus one-axis Rb-Cd-Cl and Rb-Zn-Br controls.",
+        "Control SUNs are separate branch leads, not original-mechanism successes.",
+        "No broad claim for Li/Na/K/Cs analogues, Zn-Cl, Cu-Cl, or generic d10 halides.",
+        "Requires comparable compact cell-size and finite-gap filters.",
+        "Compact finite-gap small-cell Rb-Cd-Br versus Rb-Cd-Cl and Rb-Zn-Br ternaries.",
+        "No broad claim for all Cd halides, Zn bromides, or alkali group-12 halometallates.",
+        "Control SUNs require separate branch analysis.",
+        "Population-level mean e_hull support is stronger than general SUN exclusivity.",
+        "Compact finite-gap small-cell Rb-Cd-Br versus Rb-Cd-Cl only.",
+        "Requires fixed Rb and Cd with matched stoichiometry or density/compactness filters.",
+        "Does not validate Cd-over-Zn, Rb-over-Cs, or all alkali-Cd-bromide transfer.",
+        "SUN enrichment remains evidence from earlier branches, not from the final shared-stoichiometry test."
+      ],
+      "residual_risks": [
+        "The relation to Rb-Cd-Br SUN enrichment remains branch-specific rather than unified.",
+        "Small formula pools make prototype availability a possible confound.",
+        "Local coordination, bond valence, and cavity compliance remain inferred rather than directly computed.",
+        "K-only and Rb-Cd-Br conclusions rely on sparse executable stoichiometries.",
+        "Control-derived SUNs may indicate a stronger adjacent mechanism not yet isolated.",
+        "Small branch populations make prototype availability a possible confound.",
+        "Stoichiometry mismatch remains important in the Rb bromide comparison.",
+        "The Rb-Zn-Br control SUN may reveal a distinct mechanism not yet modeled.",
+        "Bond-valence and coordination compliance were inferred from chemistry rather than measured local descriptors.",
+        "Primary pool size is small.",
+        "Local coordination and bond-valence descriptors remain inferred rather than directly measured.",
+        "Prototype selection may bias exact-formula comparisons.",
+        "Control-derived SUNs may indicate a second halometallate mechanism needing separate promotion.",
+        "Primary Rb-Cd-Br pool contains only two records.",
+        "Prototype availability may bias both primary and control tails.",
+        "Local coordination compliance and bond-valence satisfaction were inferred rather than directly computed.",
+        "Control SUN motifs may reveal a neighboring stabilizing mechanism needing its own A/B program.",
+        "Small primary pool may encode prototype availability bias.",
+        "Local Rb bond-valence and Cd-Br coordination flexibility were not directly computed.",
+        "Separated control-axis statistics may reveal distinct Cd-Cl or Zn-Br stabilization mechanisms.",
+        "Generated candidates may bias the matched small pools.",
+        "Separate RbCdX3 and Rb4CdX6 behavior may not be identical.",
+        "Local coordination, bond valence, and cage strain were not directly computed.",
+        "Cs-Cd-Br control SUNs may require a competing size-compliance principle."
+      ],
+      "first_closed_at_round": 195,
+      "last_updated_round": 426,
+      "status_history": [
+        {
+          "round": 311,
+          "status": "validated_principle",
+          "program_id": "principle_program_017"
+        },
+        {
+          "round": 312,
+          "status": "validated_principle",
+          "program_id": "principle_program_017"
+        },
+        {
+          "round": 313,
+          "status": "validated_principle",
+          "program_id": "principle_program_017"
+        },
+        {
+          "round": 314,
+          "status": "validated_principle",
+          "program_id": "principle_program_017"
+        },
+        {
+          "round": 315,
+          "status": "validated_principle",
+          "program_id": "principle_program_017"
+        },
+        {
+          "round": 317,
+          "status": "validated_principle",
+          "program_id": "principle_program_017"
+        },
+        {
+          "round": 326,
+          "status": "validated_principle",
+          "program_id": "principle_program_017"
+        },
+        {
+          "round": 327,
+          "status": "validated_principle",
+          "program_id": "principle_program_017"
+        },
+        {
+          "round": 378,
+          "status": "validated_principle",
+          "program_id": "principle_program_017"
+        },
+        {
+          "round": 398,
+          "status": "validated_principle",
+          "program_id": "principle_program_019"
+        },
+        {
+          "round": 399,
+          "status": "validated_principle",
+          "program_id": "principle_program_019"
+        },
+        {
+          "round": 405,
+          "status": "validated_principle",
+          "program_id": "principle_program_020"
+        },
+        {
+          "round": 406,
+          "status": "validated_principle",
+          "program_id": "principle_program_020"
+        },
+        {
+          "round": 411,
+          "status": "validated_principle",
+          "program_id": "principle_program_020"
+        },
+        {
+          "round": 413,
+          "status": "validated_principle",
+          "program_id": "principle_program_020"
+        },
+        {
+          "round": 414,
+          "status": "validated_principle",
+          "program_id": "principle_program_020"
+        },
+        {
+          "round": 416,
+          "status": "validated_principle",
+          "program_id": "principle_program_020"
+        },
+        {
+          "round": 417,
+          "status": "validated_principle",
+          "program_id": "principle_program_020"
+        },
+        {
+          "round": 423,
+          "status": "validated_principle",
+          "program_id": "principle_program_021"
+        },
+        {
+          "round": 426,
+          "status": "validated_principle",
+          "program_id": "principle_program_021"
+        }
+      ],
+      "merged_program_ids": [
+        "principle_program_017",
+        "principle_program_019",
+        "principle_program_020",
+        "principle_program_021"
+      ]
+    },
+    {
+      "program_id": "principle_program_016",
+      "status": "rejected_principle",
+      "closed_at_round": 201,
+      "principle_identity": "new_principle",
+      "updates_principle_id": null,
+      "topic_key": "Li-Na-Al-N::AlN-charge-partitioning-alkali-nitride-transfer-rejected",
+      "principle_statement": "Compact finite-gap Li/Na-Al-N should not be treated as lower-e_hull than matched compact Li/Na-N binaries solely because Al-N covalency partitions nitride charge; under the evaluated filters, both Li-Al-N and Na-Al-N are substantially more metastable than their binary alkali-nitride controls.",
+      "micro_mechanism": "Al-N covalency can partition nitride charge, but in compact Li/Na cells it appears to introduce coordination and stoichiometric constraints that do not improve alkali-N bond-valence satisfaction relative to the binary nitride controls. The matched Li-N and Na-N controls already access lower near-hull compact motifs.",
+      "reasoning_chain": [
+        "The proposed mechanism predicted lower primary mean e_hull for both Li-Al-N and Na-Al-N relative to matched Li/Na-N controls.",
+        "Round 201 contradicted both branches: Li primary mean was 0.307 eV/atom versus 0.026 eV/atom control, and Na primary mean was 0.378 eV/atom versus 0.127 eV/atom control.",
+        "Primary minima were also worse than control minima in both alkali branches, so the contradiction is not only a mean-pool artifact.",
+        "No primary, control, or mechanism-validated SUNs appeared, leaving the rejection based on metastability evidence rather than SUN accounting."
+      ],
+      "evidence_rounds": [
+        201
+      ],
+      "boundaries": [
+        "Compact finite-gap small-cell Li-Al-N and Na-Al-N versus matched Li-N and Na-N binaries.",
+        "Rejects broad Al-N charge-partitioning transfer, not every prototype-specific alkali aluminonitride.",
+        "Does not alter the validated Ca-Si-N principle because the cation, network former, and tested intervention differ.",
+        "Does not address non-compact, larger-cell, or experimentally constrained prototype windows."
+      ],
+      "residual_risks": [
+        "Primary pools partly required generated candidates, which may miss favorable known ordering motifs.",
+        "Coordination and bond-valence mismatch were not directly computed from relaxed local environments.",
+        "A stoichiometry-specific LiAlN2 or NaAlN2 window could remain viable outside the broad compact filter."
+      ]
+    },
+    {
+      "program_id": "principle_program_017",
+      "status": "validated_principle",
+      "closed_at_round": 383,
+      "principle_identity": "new_principle",
+      "updates_principle_id": null,
+      "topic_key": "Li-Na-K-Rb-Cs-B-N::exact-A3BN2-BN-charge-partitioning-size-boundary",
+      "principle_statement": "Compact finite-gap exact Li3BN2 and limited Na3BN2 lower metastability relative to matched alkali-nitride binaries through stoichiometry-gated BN charge partitioning, but the mechanism is size-gated: K/Rb/Cs A3BN2 are boundary failures because large alkali cations over-expand compact nitride cavities and underperform matched A-N binaries.",
+      "micro_mechanism": "B-N covalency partitions nitride charge, while exact A3 loading supplies enough electropositive cations to satisfy local nitride bond valence. This works for small alkali cavities, especially Li and tentatively Na, but larger K/Rb/Cs cations over-expand compact nitride cavities and weaken BN packing relative to their binary nitride controls.",
+      "reasoning_chain": [
+        "Round 380 supported Li3BN2 over Li-N but contradicted the original Na-failure boundary.",
+        "Round 381 narrowed the principle to exact Li/Na A3BN2 and found both branches lower in mean e_hull, with primary-only SUN discovery.",
+        "Round 383 repeated the exact-stoichiometry test: Li3BN2 mean e_hull -0.00446 versus Li-N 0.02383, and Na3BN2 -0.00713 versus Na-N 0.06197.",
+        "Across the finalized program, control_sun_count stayed zero while mechanism_validated_sun_count reached four in the latest evaluated round.",
+        "Earlier rounds established exact Li3BN2 and sentinel Na3BN2 as lower-e_hull than matched compact alkali-nitride controls.",
+        "Round 385 reproduced Li3BN2 superiority over Li-N binaries with primary_mean -0.005312 versus control_mean 0.026276.",
+        "Round 385 generated 2 primary SUNs and 0 control SUNs, so SUN accounting supports the Li3BN2 mechanism rather than a control branch.",
+        "K/Rb/Cs A3BN2 all underperformed matched A-N controls, validating them as size-boundaries rather than transfers."
+      ],
+      "evidence_rounds": [
+        380,
+        381,
+        383,
+        385
+      ],
+      "boundaries": [
+        "Compact finite-gap small-cell exact Li3BN2 and sentinel Na3BN2 versus matched Li-N or Na-N binaries.",
+        "Validated for mean e_hull reduction and primary SUN enrichment, not for broad alkali-boron-nitride composition space.",
+        "Distinct from rejected Li/Na-Al-N because the stabilizing network former and exact stoichiometry gate differ.",
+        "No claim yet for K/Rb/Cs analogues, noncompact cells, larger cells, or off-stoichiometric B-N frameworks.",
+        "K/Rb/Cs A3BN2 are excluded transfer boundaries under matched compact filters.",
+        "Validated for mean e_hull reduction and primary SUN enrichment, not broad Li-B-N composition space.",
+        "Off-stoichiometric B-N frameworks and noncompact or larger-cell regimes remain outside scope."
+      ],
+      "residual_risks": [
+        "Na branch rests on one executable Na3BN2 record.",
+        "Local coordination and bond-valence satisfaction are descriptor-inferred rather than directly computed.",
+        "Prototype availability may bias the small exact-formula pools.",
+        "Off-stoichiometric B-N controls remain an important unresolved falsification axis.",
+        "Direct off-stoichiometric Li-B-N falsification remains blocked by executable pool limits.",
+        "Na3BN2 still rests on sparse executable evidence.",
+        "Local BN coordination and A-N bond-valence completion are descriptor-inferred.",
+        "Prototype availability may bias exact-formula small-cell pools."
+      ],
+      "first_closed_at_round": 383,
+      "last_updated_round": 385,
+      "status_history": [
+        {
+          "round": 385,
+          "status": "validated_principle",
+          "program_id": "principle_program_018"
+        }
+      ],
+      "merged_program_ids": [
+        "principle_program_018"
+      ]
+    },
+    {
+      "program_id": "principle_program_018",
+      "status": "rejected_principle",
+      "closed_at_round": 390,
+      "principle_identity": "new_principle",
+      "updates_principle_id": null,
+      "topic_key": "Li-Na-V-O::V-redox-bond-valence-accommodation-rejected",
+      "principle_statement": "Compact finite-gap Li/Na-V-O ternary oxides do not show a validated lower-e_hull advantage over matched Li/Na-Al-O oxides from V redox bond-valence accommodation; in the evaluated windows, Al-O controls are lower in mean and minimum e_hull.",
+      "micro_mechanism": "Multivalent V can locally adjust V-O bond order and coordination, but in the tested compact Li/Na oxide windows that flexibility did not overcome the thermodynamic advantage of Al-O oxide controls, whose strong Al-O framework and alkali-oxygen packing already satisfy bond valence at lower metastability.",
+      "reasoning_chain": [
+        "The active mechanism predicted V-O primaries would lower mean e_hull relative to Al-O controls through multivalent bond-valence accommodation.",
+        "Round 390 Li sentinel contradicted the prediction: Li-V-O primary mean e_hull was 0.080121 versus 0.009429 for Li-Al-O control.",
+        "Round 390 Na comparison also contradicted the prediction: Na-V-O primary mean e_hull was 0.067397 versus 0.033131 for Na-Al-O controls.",
+        "SUN accounting supplied no offsetting success: primary, control, and mechanism-validated SUN counts were all zero."
+      ],
+      "evidence_rounds": [
+        390
+      ],
+      "boundaries": [
+        "Rejects compact finite-gap Li/Na-V-O versus Li/Na-Al-O mean-e_hull advantage under matched small-cell filters.",
+        "Does not reject all vanadate stability mechanisms or experimentally known vanadate prototypes.",
+        "Does not transfer to phosphate, nitride, halide, or borate principles in the existing book.",
+        "Al-O control strength should be treated as a separate possible oxide-framework mechanism lead."
+      ],
+      "residual_risks": [
+        "Li-Al-O control pool was sparse, so Li evidence is sentinel rather than population-level.",
+        "Coordination, oxidation state, and bond-valence descriptors were not directly validated from local structures.",
+        "A narrower stoichiometry- or prototype-specific V-O mechanism may remain viable outside the tested compact windows."
+      ]
+    },
+    {
+      "program_id": "principle_program_019",
+      "status": "validated_principle",
+      "closed_at_round": 400,
+      "principle_identity": "new_principle",
+      "updates_principle_id": null,
+      "topic_key": "Li-Na-Si-P-O::silicate-hard-oxide-framework-over-phosphate",
+      "principle_statement": "Compact finite-gap Li/Na-Si-O ternary oxides show validated lower mean e_hull than matched Li/Na-P-O controls because hard Si-O framework cohesion and compact Li/Na oxygen-cavity bond-valence matching outperform generic phosphate charge localization under the tested filters.",
+      "micro_mechanism": "Strong Si-O covalency builds a rigid, high-cohesion oxide framework while Li/Na occupy compact oxygen coordination environments that can satisfy alkali bond valence without the extra charge-localization and topology constraints imposed by phosphate units.",
+      "reasoning_chain": [
+        "The active mechanism predicted Li/Na phosphate mean e_hull should beat same-alkali silicate controls under compact finite-gap filters.",
+        "Li-P-O underperformed Li-Si-O in mean and minimum e_hull, failing the Li branch.",
+        "Na-P-O strongly underperformed Na-Si-O in mean e_hull, failing the Na branch despite a slightly better primary minimum.",
+        "No primary or control SUNs appeared, so the rejected claim is mean-e_hull enrichment rather than discovery accounting.",
+        "Round 400 rejected broad phosphate-over-silicate stabilization and exposed silicate controls as the lower-e_hull branch.",
+        "Round 410 directly inverted the test and found Li-Si-O lower than Li-P-O with primary mean 0.0091 versus control mean 0.1754.",
+        "Round 410 Na sentinel also supported the same direction with primary e_hull 0.0972 versus control e_hull 0.5437.",
+        "SUN accounting stayed zero, so the validated claim is relative metastability reduction rather than stable-phase discovery."
+      ],
+      "evidence_rounds": [
+        400,
+        410
+      ],
+      "boundaries": [
+        "Compact finite-gap ternary Li/Na-P-O versus Li/Na-Si-O only.",
+        "Rejects broad phosphate-over-silicate stabilization, not prototype-specific phosphates.",
+        "Does not update existing nitride, halide, borate, or vanadate principles because the material family and microscopic driver are distinct.",
+        "Silicate control strength should be treated as a possible separate hard-oxide framework lead.",
+        "Compact finite-gap ternary Li/Na oxide filters with matched Si-O versus P-O chemistry.",
+        "Mean e_hull enrichment only; SUN production remains unvalidated.",
+        "Does not reject prototype-specific phosphate stability outside the compact matched window.",
+        "Transfer beyond Li/Na or beyond oxides requires separate falsification."
+      ],
+      "residual_risks": [
+        "Small selected bundle sizes may emphasize prototype availability.",
+        "PO4 and SiO4 local motifs were inferred from chemistry, not explicitly coordinated.",
+        "A narrow Na phosphate best-tail mechanism may survive outside mean-e_hull enrichment.",
+        "Al-O comparison remains untested in this program.",
+        "Small bundle sizes may encode prototype-selection bias.",
+        "Na branch needs population-level replication.",
+        "Coordination and bond-valence satisfaction were descriptor-inferred rather than locally computed.",
+        "Exact stoichiometry effects may narrow the principle further."
+      ],
+      "first_closed_at_round": 400,
+      "last_updated_round": 410,
+      "status_history": [
+        {
+          "round": 410,
+          "status": "validated_principle",
+          "program_id": "principle_program_020"
+        }
+      ],
+      "merged_program_ids": [
+        "principle_program_020"
+      ]
+    },
+    {
+      "program_id": "principle_program_020",
+      "status": "validated_principle",
+      "closed_at_round": 422,
+      "principle_identity": "new_principle",
+      "updates_principle_id": null,
+      "topic_key": "Na-P-S::dense-thiophosphate-charge-partitioning-sulfide-stabilization",
+      "principle_statement": "Dense finite-gap small-cell Na-P-S ternaries can lower metastability relative to matched dense Na-S binaries through P-S charge partitioning coupled to compact Na-centered sulfide coordination, but this validates population-level e_hull reduction rather than exclusive SUN discovery.",
+      "micro_mechanism": "P-S covalency reduces sulfide overbasicity and stabilizes mixed covalent/ionic frameworks, while dense Na coordination environments maintain soft-anion packing and Na bond-valence balance. Binary Na-S controls can still form near-hull motifs, but lack the same P-S charge-partitioning stabilization across the evaluated dense finite-gap population.",
+      "reasoning_chain": [
+        "Rounds 420-422 consistently show lower Na-P-S mean e_hull than matched Na-S controls under compact finite-gap filters.",
+        "Latest expanded nsites_max 48 test preserves the advantage: primary mean -0.00031 versus control mean 0.02346 eV/atom, with support_rate 1.0.",
+        "Primary best-tail remains lower than control best-tail, supporting the dense P-S charge-partitioning mechanism beyond mean-only separation.",
+        "Repeated Na-S control SUNs define a boundary and a separate binary sulfide lead, not a contradiction of the e_hull-reduction mechanism."
+      ],
+      "evidence_rounds": [
+        420,
+        421,
+        422
+      ],
+      "boundaries": [
+        "Validated for dense finite-gap small-cell Na-P-S ternaries versus Na-S binaries only.",
+        "Requires compact Na sulfide coordination; low-density expanded cells are outside scope.",
+        "SUN enrichment is not guaranteed because Na-S controls can also produce near-hull candidates.",
+        "No transfer claim to Li/K/Rb/Cs thiophosphates or oxide/nitride analogues."
+      ],
+      "residual_risks": [
+        "Small executable pools may reflect prototype availability rather than a general thermodynamic law.",
+        "Local P-S bonding and Na bond-valence satisfaction were inferred from chemistry, not explicitly computed.",
+        "Control Na-S SUNs may motivate a competing sulfide stabilization mechanism.",
+        "Alternative ternary sulfide formers have not been tested as controls."
+      ]
+    }
+  ],
+  "current_principle_program": {
+    "program_id": "principle_program_021",
+    "status": "active",
+    "started_round": 427,
+    "inner_iteration": 1,
+    "max_inner_rounds": 8,
+    "current_principle_statement": "Fixed-Rb, fixed-Cd bromides lower metastability versus chlorides through softer Cd-Br cages that better fit Rb cavities.",
+    "micro_mechanism": "Br polarizability and larger radius soften Cd-halide cages and reduce Rb cavity strain.",
+    "active_mechanism_ids": [
+      "m001_revised"
+    ],
+    "evidence_rounds": [],
+    "failure_boundaries": [],
+    "unresolved_contradictions": [],
+    "current_round": 427
+  },
+  "best_round_summary": {
+    "round": 5,
+    "created_at_utc": "2026-05-20T01:53:22.597800+00:00",
+    "accepted_mechanisms": [
+      {
+        "id": "m001_B_exploitation_refinement",
+        "claim": "Li-Mn oxophosphate stabilization is Mn-specific phosphate separation, bounded by compact Li-Mn oxide stability.",
+        "rationale_summary": "Completed rounds support only a narrow Li-Mn-O-P advantage. Fe/V transfer failed, dense/open compactness was ambiguous, and compact Li-Mn-O controls beat compact phosphates in round 3.",
+        "causal_driver": "Mn bond-valence and Jahn-Teller strain relief from phosphate-separated oxygen networks.",
+        "intervention": "Compare Li-Mn-O-P against P-free Li-Mn-O within matched moderate-density and compact windows.",
+        "controlled_variables": [
+          "Fix Li and Mn; exclude Fe and V substitution.",
+          "Match nsites, density, volume per atom, and band gap."
+        ],
+        "descriptor_predictions": [
+          "Moderate-density Li-Mn-O-P should lower mean e_hull versus matched Li-Mn-O.",
+          "Compact Li-Mn-O controls should match or beat compact Li-Mn-O-P."
+        ],
+        "failure_modes": [
+          "P-free Li-Mn-O wins in both moderate and compact windows.",
+          "Phosphate advantage appears only in compact Li-Mn-O-P candidates."
+        ],
+        "evidence_chain": [
+          "Round 1 supported Li-Mn-O-P over Li-Mn-O but failed for Li-Fe.",
+          "Round 3 support_rate was 0.0: compact Li-Mn-O controls slightly beat compact phosphates."
+        ],
+        "counterevidence_considered": [
+          "Round 2 support_rate was 0.5, but dense/open splitting did not validate compactness.",
+          "No completed evidence directly separates PO4 from pyrophosphate topology."
+        ],
+        "scope": "Li-Mn-O-P versus Li-Mn-O inside the active oxophosphate program.",
+        "confidence": "medium",
+        "expected_material_signs": [
+          "Primary branch contains Li, Mn, O, and P.",
+          "Useful primaries have moderate density or larger volume per atom than compact oxides."
+        ],
+        "do_not_generalize_to": [
+          "Li-Fe or Li-V oxophosphates.",
+          "All dense or compact Li-Mn-O-P phases."
+        ],
+        "testable_implications": [
+          "Use executable P-present versus P-absent matched-pair branches.",
+          "Treat topology proxies as exploratory, not as the established mechanism."
+        ]
+      }
+    ],
+    "accepted_predictions": [
+      {
+        "id": "p001",
+        "mechanism_ids": [
+          "m001_B_exploitation_refinement"
+        ],
+        "claim": "Moderate-density Li-Mn oxophosphates will have lower mean e_hull than matched P-free Li-Mn oxides.",
+        "predicted_relation": "primary_lower_e_hull_than_control",
+        "comparison_design": {
+          "primary_count": 5,
+          "control_count": 5,
+          "matching_notes": [
+            "Executable pools: primary 127 matches/32 formulas; control 11 matches/8 formulas.",
+            "Compact branch underfills: primary 4 matches/2 formulas; budget reserved for moderate-density test."
+          ],
+          "primary_query": {
+            "elements_all": [
+              "Li",
+              "Mn",
+              "O",
+              "P"
+            ],
+            "elements_none": [
+              "Fe",
+              "V"
+            ],
+            "nelements_min": 4,
+            "nelements_max": 4,
+            "density_min": 2.8,
+            "density_max": 3.6,
+            "nsites_min": 8,
+            "nsites_max": 48,
+            "band_gap_min": 0.0,
+            "band_gap_max": 3.5,
+            "volume_per_atom_min": 8.0,
+            "volume_per_atom_max": 16.0,
+            "preferred_order": [
+              "nsites asc",
+              "density asc",
+              "volume_per_atom asc",
+              "band_gap asc",
+              "formation_energy_per_atom asc",
+              "material_id asc"
+            ]
+          },
+          "control_query": {
+            "elements_all": [
+              "Li",
+              "Mn",
+              "O"
+            ],
+            "elements_none": [
+              "P",
+              "Fe",
+              "V"
+            ],
+            "nelements_min": 3,
+            "nelements_max": 3,
+            "density_min": 2.8,
+            "density_max": 3.6,
+            "nsites_min": 8,
+            "nsites_max": 48,
+            "band_gap_min": 0.0,
+            "band_gap_max": 3.5,
+            "volume_per_atom_min": 8.0,
+            "volume_per_atom_max": 16.0,
+            "preferred_order": [
+              "nsites asc",
+              "density asc",
+              "volume_per_atom asc",
+              "band_gap asc",
+              "formation_energy_per_atom asc",
+              "material_id asc"
+            ]
+          }
+        },
+        "falsification_criteria": [
+          "Primary mean e_hull is not lower than control mean e_hull.",
+          "Controls contain equal or more SUN outcomes than primaries."
+        ],
+        "scope": "Moderate-density Li-Mn-O-P versus Li-Mn-O only.",
+        "confidence": "medium"
+      }
+    ],
+    "accepted_bundles": [
+      {
+        "id": "b001_F_repair",
+        "prediction_ids": [
+          "p001"
+        ],
+        "expected_relation": "primary_lower_e_hull_than_control",
+        "primary": {
+          "source": "mp_pool",
+          "count": 5,
+          "query": {
+            "elements_all": [
+              "Li",
+              "Mn",
+              "O",
+              "P"
+            ],
+            "elements_none": [
+              "Fe",
+              "V"
+            ],
+            "nelements_min": 4,
+            "nelements_max": 4,
+            "density_min": 2.8,
+            "density_max": 3.6,
+            "nsites_min": 8,
+            "nsites_max": 48,
+            "band_gap_min": 0.0,
+            "band_gap_max": 3.5,
+            "volume_per_atom_min": 8.0,
+            "volume_per_atom_max": 16.0,
+            "preferred_order": [
+              "nsites asc",
+              "density asc",
+              "volume_per_atom asc",
+              "band_gap asc",
+              "formation_energy_per_atom asc",
+              "material_id asc"
+            ]
+          }
+        },
+        "control": {
+          "source": "mp_pool",
+          "count": 5,
+          "query": {
+            "elements_all": [
+              "Li",
+              "Mn",
+              "O"
+            ],
+            "elements_none": [
+              "P",
+              "Fe",
+              "V"
+            ],
+            "nelements_min": 3,
+            "nelements_max": 3,
+            "density_min": 2.8,
+            "density_max": 3.6,
+            "nsites_min": 8,
+            "nsites_max": 48,
+            "band_gap_min": 0.0,
+            "band_gap_max": 3.5,
+            "volume_per_atom_min": 8.0,
+            "volume_per_atom_max": 16.0,
+            "preferred_order": [
+              "nsites asc",
+              "density asc",
+              "volume_per_atom asc",
+              "band_gap asc",
+              "formation_energy_per_atom asc",
+              "material_id asc"
+            ]
+          }
+        },
+        "rationale_summary": "Accepts F's repair in exploitation mode. The bundle preserves the accepted Li-Mn oxophosphate versus matched P-free Li-Mn oxide test, with comparable Li/Mn/O chemistry, density, nsites, band-gap, and volume-per-atom windows. Candidate-pool checks show adequate availability: primary 140 matches across 36 formulas; control 13 matches across 9 formulas.",
+        "selection_notes": "Use the accepted C/D deterministic order without the added formula tie-break. Material_id is retained only as final duplicate bookkeeping; the intended intervention remains phosphate inclusion versus P-free oxide."
+      }
+    ],
+    "selected_material_ids": [
+      "mp-753752",
+      "mp-1177939",
+      "mp-753382",
+      "mp-25831",
+      "mp-25971",
+      "mp-754245",
+      "mp-755372",
+      "mp-1173951",
+      "mp-1173923",
+      "mp-1232984"
+    ],
+    "bundle_results": [
+      {
+        "bundle_id": "b001_F_repair",
+        "prediction_ids": [
+          "p001"
+        ],
+        "primary_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "control_indices": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "primary_mean_e_hull": 0.0577112721770698,
+        "control_mean_e_hull": 0.20590270775248634,
+        "primary_min_e_hull": 0.046588563375722813,
+        "control_min_e_hull": 0.02590365933601735,
+        "primary_sun_count": 0,
+        "control_sun_count": 0,
+        "mechanism_validated_sun_count": 0,
+        "delta": -0.14819143557541653,
+        "supported": true,
+        "expected_relation": "primary_lower_e_hull_than_control"
+      }
+    ],
+    "evaluation_summary": {
+      "count": 10,
+      "mean_e_hull": 0.13180698996477808,
+      "min_e_hull": 0.02590365933601735,
+      "max_e_hull": 0.32378783052830595,
+      "stable_count": 0,
+      "primary_sun_count": 0,
+      "control_sun_count": 0,
+      "mechanism_validated_sun_count": 0,
+      "support_rate": 1.0,
+      "supported_bundle_count": 1,
+      "bundle_count": 1
+    },
+    "principle_program": {
+      "program_id": "principle_program_001",
+      "status": "active",
+      "started_round": 1,
+      "inner_iteration": 5,
+      "max_inner_rounds": 8,
+      "current_principle_statement": "Li-Mn oxophosphate stabilization is Mn-specific phosphate separation, bounded by compact Li-Mn oxide stability.",
+      "micro_mechanism": "Mn bond-valence and Jahn-Teller strain relief from phosphate-separated oxygen networks.",
+      "active_mechanism_ids": [
+        "m001_B_exploitation_refinement"
+      ],
+      "failure_boundaries": [
+        "Do not generalize from Li-Mn to all first-row transition metals.",
+        "Li-Fe oxophosphates are a negative boundary under current size/density matching.",
+        "Li-V oxophosphates are a negative early-transition-metal boundary.",
+        "No claim of absolute stability or SUN discovery is supported."
+      ],
+      "unresolved_contradictions": [
+        "Why Mn benefits while Fe does not despite both supporting phosphate cathode chemistries.",
+        "Whether selected P-free controls are unusually favorable compact oxides.",
+        "Whether PO4 versus P2O7 topology separates successes from failures.",
+        "Whether oxidation-state matching would reduce the Fe/V contradiction."
+      ],
+      "recent_evidence_rounds": [
+        {
+          "round": 1,
+          "hypothesis_status": "ambiguous",
+          "principle_update_action": "narrow",
+          "support_rate": 0.3333333333333333,
+          "primary_sun_count": 0,
+          "control_sun_count": 0,
+          "mechanism_validated_sun_count": 0,
+          "delta": 0.01732063584055421,
+          "short_interpretation": "The broad phosphate-buffering principle is not supported as stated: aggregate primary e_hull is worse than controls and only the Li-Mn bundle supports the predicted direction. The Mn result is chemically plausible because phosphate frame..."
+        },
+        {
+          "round": 2,
+          "hypothesis_status": "ambiguous",
+          "principle_update_action": "refine",
+          "support_rate": 0.5,
+          "primary_sun_count": 0,
+          "control_sun_count": 0,
+          "mechanism_validated_sun_count": 0,
+          "delta": -0.3569118544914499,
+          "short_interpretation": "The Mn-specific phosphate stabilization remains plausible because both open and dense Li-Mn-O-P primaries have lower mean e_hull than matched P-free oxides. However, the dense branch directly contradicts the proposed open-framework bound..."
+        },
+        {
+          "round": 3,
+          "hypothesis_status": "contradicted",
+          "principle_update_action": "narrow",
+          "support_rate": 0.0,
+          "primary_sun_count": 0,
+          "control_sun_count": 0,
+          "mechanism_validated_sun_count": 0,
+          "delta": 0.0013516655329507202,
+          "short_interpretation": "Round 3 contradicts the compact-density extension: matched compact Li-Mn-O controls have slightly lower mean e_hull than Li-Mn-O-P primaries, despite the primary branch having the lower minimum. With zero SUNs, this is not a discovery re..."
+        }
+      ]
+    },
+    "principle_postmortem": {
+      "status": "continue",
+      "program_id": "principle_program_001",
+      "round": 5,
+      "hypothesis_status": "supported",
+      "principle_update_action": "refine",
+      "current_principle_statement": "Moderate-density Li-Mn oxophosphates are stabilized relative to matched P-free Li-Mn oxides when phosphate-separated oxygen networks relieve Mn bond-valence and Jahn-Teller strain; the effect should not be generalized to Fe/V systems or compact Li-Mn oxide-like regimes.",
+      "micro_mechanism": "PO4-separated oxygen sublattices can reduce edge-sharing Mn-O-Mn connectivity, distribute Li/Mn coordination strain, and accommodate Mn-centered Jahn-Teller distortions better than comparable moderate-density P-free Li-Mn oxides. In compact regimes, dense Li-Mn-O frameworks can already satisfy Mn coordination and electrostatic packing, removing or reversing the phosphate advantage.",
+      "e_hull_evidence": {
+        "primary_mean": 0.0577112721770698,
+        "control_mean": 0.20590270775248634,
+        "support_rate": 1.0
+      },
+      "sun_accounting": {
+        "primary_sun_count": 0,
+        "control_sun_count": 0,
+        "mechanism_validated_sun_count": 0
+      },
+      "causal_interpretation": "Round 5 supports the narrowed mechanism: within matched moderate-density Li-Mn chemistry, oxophosphates have much lower mean e_hull than P-free controls. This is relative stabilization, not discovery, because no SUN outcomes occurred and the control branch contains the lowest single e_hull. The prior compact contradiction remains a real boundary: phosphate separation helps only where the oxide alternative is structurally strained or under-connected, not where compact Li-Mn-O packing is already favorable.",
+      "failure_boundaries": [
+        "No absolute stability or SUN discovery is supported.",
+        "Do not transfer to Li-Fe-O-P or Li-V-O-P without oxidation-state-specific evidence.",
+        "Do not apply to compact Li-Mn regimes where P-free oxides can match or beat phosphates.",
+        "Single low-e_hull control outliers are not explained by the current phosphate mechanism."
+      ],
+      "unresolved_contradictions": [
+        "Why Fe phosphate chemistry failed under current matching despite known Fe phosphate cathode stability.",
+        "Whether Mn oxidation-state distribution, not phosphate topology alone, is the true causal separator.",
+        "Whether PO4 versus P2O7 motifs determine the supported moderate-density window.",
+        "Why the lowest individual round-5 e_hull is a P-free control despite lower primary mean."
+      ],
+      "next_test_focus": "Within Li-Mn-O-P at moderate density, compare PO4-dominated versus condensed/polyphosphate or mixed-anion topologies under matched Mn oxidation proxy, nsites, density, volume per atom, and band gap; falsify if topology or oxidation-state matching removes the oxophosphate advantage.",
+      "experience_book_entry": null
+    }
+  }
+}

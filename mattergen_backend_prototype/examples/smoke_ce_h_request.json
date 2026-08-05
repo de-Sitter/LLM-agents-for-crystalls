@@ -1,0 +1,19 @@
+{
+  "backend": "mattergen",
+  "request_id": "smoke_ce_h_accept",
+  "checkpoint": "chemical_system_energy_above_hull",
+  "model_path": "/path/to/mattergen/checkpoints/chemical_system_energy_above_hull",
+  "target_count": 1,
+  "batch_size": 1,
+  "num_batches": 1,
+  "properties_to_condition_on": {
+    "chemical_system": "Ce-H",
+    "energy_above_hull": 0.0
+  },
+  "diffusion_guidance_factor": 1.0,
+  "filters": {
+    "chemical_system": "Ce-H",
+    "max_sites": 20,
+    "deduplicate_reduced_formula": true
+  }
+}

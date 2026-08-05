@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it using the metadata below."
+title: "Crystal-LLM Agents: Multi-Agent Crystal Structure Discovery with MatterGen"
+type: software
+version: "TODO"
+date-released: "TODO"
+authors:
+  - family-names: "TODO"
+    given-names: "TODO"
+repository-code: "https://github.com/TODO/TODO"
+license: "TODO"
+
