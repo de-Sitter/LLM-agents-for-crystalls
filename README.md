@@ -2,9 +2,7 @@
 
 面向晶体结构发现的多智能体闭环系统：A–F 负责提出、反驳并用对照实验验证材料学原理，X/Y/Z/W 负责把已验证经验转化为候选设计，MatterGen 负责生成晶体结构，统一 evaluator 返回稳定性、新颖性与 S.U.N. 反馈。
 
-This repository is a compact public-release candidate for a multi-agent crystal-structure discovery workflow coupled to MatterGen and an evaluator feedback loop.
-
-> 当前文件夹是从完整实验工作区抽取的公开发布包。项目代码采用 Apache License 2.0；作者与引用信息仍待补充，详见 [发布前检查清单](docs/PRE_RELEASE_CHECKLIST.md)。
+This repository implements a multi-agent crystal-structure discovery workflow coupled to MatterGen and an evaluator feedback loop.
 
 ## 主要结果
 
@@ -41,7 +39,7 @@ flowchart LR
 
 ## 快速检查
 
-推荐 Python 3.10–3.12；本发布包在 Python 3.12.2 下校验。
+推荐 Python 3.10–3.12；本项目在 Python 3.12.2 下校验。
 
 ```bash
 python -m venv .venv
@@ -73,16 +71,10 @@ PYTHONPATH=src pytest -q
 | `artifacts/intermediate_data.md` | 15 条验证原理、45 组关键对照实验和 1000 条材料能量 |
 | `artifacts/final_materials.csv` | 1000 条化学式、`E_hull` 与 in-sample S.U.N. 标签 |
 | `artifacts/af_principles_state.json` | 可供 X/Y 读取的精简 A–F 原理状态 |
-| `SOURCE_MANIFEST.json` | 发布文件来源与源文件校验和 |
+| `SOURCE_MANIFEST.json` | 核心文件来源与源文件校验和 |
 
 完整目录说明见 [代码与数据清单](docs/CODE_AND_DATA.md)。
 
-## 发布边界
+## 许可证
 
-本包没有包含：真实 `.env`、API 凭据、历史 controller/Slurm 日志、数百轮运行目录、约 2 GB patched phase-diagram 数据、MatterGen checkpoint、旧结果快照和课程 PDF。外部 evaluator 数据与 MatterGen 环境需要合法地单独获取。
-
-## 许可证与引用
-
-本项目自有代码采用 [Apache License 2.0](LICENSE)。外部依赖、MatterGen、checkpoint、evaluator 数据及其他第三方材料仍分别受其原许可证和使用条款约束。
-
-正式引用信息尚待作者补充；请填写 `CITATION.cff.template` 后重命名为 `CITATION.cff`。其余待确认事项见 [发布前检查清单](docs/PRE_RELEASE_CHECKLIST.md)。
+本项目采用 [Apache License 2.0](LICENSE)。
